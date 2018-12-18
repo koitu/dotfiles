@@ -1,0 +1,193 @@
+#yay making one config from scratch
+#ie taking pieces from other things
+[colors]
+#update colours in the document
+
+#when is foreground used?
+foreground = #FFFFFF
+background = #17181a
+#background = #09090d
+
+#1 is a modifier to symbolize a lighter colour
+black = #353540
+black1 = #545466
+
+red = #8c5760
+red1 = #b26f7a
+
+green = #7b8c58
+green1 = #9db270
+
+yellow = #8c6e43
+yellow1 = #b28c55
+
+blue = #58698c
+blue1 = #7086b2
+
+magenta = #7b5e7d
+magenta1 = #9c77b2
+
+cyan = #607D8B
+cyan1 = #82a2b2
+
+white = #80808c
+white1 = #b8b8c8
+
+
+[bar/top]
+width = 100%
+height = 27
+#tray-padding = 2
+tray-background = #5a000000
+tray-transparent = true
+background = ${colors.background}
+foreground = ${colors.white}
+#foreground-alt = #555555
+#dpi = 110
+
+locale = en_CA.UTF-8
+
+#spacing = 4
+#underline-size = 2
+#padding-right = 5
+#padding-left = 2
+#module-margin-left = 5
+#module-margin-right = 3
+
+font-0 = Inconsolata:size=11;1
+font-1 = NotoMono:size=10;1
+font-2 = MaterialIcons:size=10;2
+#font-4 = DejaVuSans:size=10;2
+#dejavusans looks bad
+#font-0 = FontAwesome:size=8;0
+
+
+
+modules-left = i3
+modules-center = my-text
+#modules-center = memory
+#modules-right = volume backlight battery powermenu
+
+
+[module/my-text]
+type = custom/text
+
+content = the quick brown fox jumped over the lazy dog
+
+
+[module/i3]
+type = internal/i3
+
+#pin-workspaces = true
+
+ws-icon-0 = 1;1
+ws-icon-1 = 2;2
+ws-icon-2 = 3;3
+ws-icon-3 = 4;4
+ws-icon-4 = 5;5
+ws-icon-5 = 6;6
+ws-icon-6 = 7;7
+ws-icon-7 = 8;8
+
+#not being used yet
+#ws-icon-8 = 9; 9
+#ws-icon-9 = 0: 0
+#ws-icon-default = 0
+
+label-focused = %icon%
+label-focused-foreground = ${colors.white1}
+label-focused-background = ${colors.black}
+#label-focused-underline = #4286f4
+label-focused-padding = 1
+
+label-unfocused = %icon%
+label-unfocused-padding = 1
+
+#label-visible = %icon%
+#label-visible-underline = #555555
+#label-visible-padding = 2
+
+#label-urgent = %icon%
+#label-urgent-foreground = #000000
+#label-urgent-background = #bd2c40
+#label-urgent-padding = 2
+
+
+[module/battery]
+type = internal/battery
+
+#full-at = 95
+
+battery = BAT0
+adapter = AC
+
+poll-interval = 5
+
+; see "man date" for details on how to format the time string
+; NOTE: if you want to use syntax tags here you need to use %%{...}
+; Default: %H:%M:%S
+time-format = %H:%M
+
+; Available tags:
+;   <label-charging> (default)
+;   <bar-capacity>
+;   <ramp-capacity>
+;   <animation-charging>
+format-charging = <animation-charging> <label-charging>
+
+; Available tags:
+;   <label-discharging> (default)
+;   <bar-capacity>
+;   <ramp-capacity>
+;   <animation-discharging>
+format-discharging = <ramp-capacity> <label-discharging>
+
+; Available tags:
+;   <label-full> (default)
+;   <bar-capacity>
+;   <ramp-capacity>
+;format-full = <ramp-capacity> <label-full>
+
+; Available tokens:
+;   %percentage% (default)
+;   %time%
+;   %consumption% (shows current charge rate in watts)
+label-charging = Charging %percentage%%
+
+; Available tokens:
+;   %percentage% (default)
+;   %time%
+;   %consumption% (shows current discharge rate in watts)
+label-discharging = Discharging %percentage%%
+
+; Available tokens:
+;   %percentage% (default)
+label-full = Fully charged
+
+; Only applies if <ramp-capacity> is used
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+
+; Only applies if <bar-capacity> is used
+bar-capacity-width = 10
+
+; Only applies if <animation-charging> is used
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+; Framerate in milliseconds
+animation-charging-framerate = 750
+
+; Only applies if <animation-discharging> is used
+animation-discharging-0 = 
+animation-discharging-1 = 
+animation-discharging-2 = 
+animation-discharging-3 = 
+animation-discharging-4 = 
+; Framerate in milliseconds
+animation-discharging-framerate = 500
