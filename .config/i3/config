@@ -51,16 +51,18 @@ bindsym $mod+Shift+q kill
 bindsym $mod+z exec --no-startup-id morc_menu
 
 ################################################################################################
-## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
+## sound-section ##
 ################################################################################################
-#uncomment if does not work
 exec --no-startup-id volumeicon
 bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 
-#exec --no-startup-id pkill pulseaudio
 exec --no-startup-id pulseaudio -k && pulseaudio --start
-#exec --no-startup-id pulseaudio -k
-#exec --no-startup-id pulseaudio --start
+#if pulseaudio is giving a error regarding ofono than shutdown and reboot
+
+#if there no sound is being played 
+#use pavucontrol to check configuration
+#change the High Defenition Audio Controler off
+#this will disable sound through hdmi but should make built in audio work
 
 #exec --no-startup-id pa-applet
 #bindsym $mod+Ctrl+m exec pavucontrol
