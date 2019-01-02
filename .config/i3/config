@@ -57,8 +57,12 @@ bindsym $mod+z exec --no-startup-id morc_menu
 exec --no-startup-id volumeicon
 bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 
-exec --no-startup-id pkill pulseaudio && dbus-launch pulseaudio
-exec --no-startup-id pa-applet
+#exec --no-startup-id pkill pulseaudio
+exec --no-startup-id pulseaudio -k && pulseaudio --start
+#exec --no-startup-id pulseaudio -k
+#exec --no-startup-id pulseaudio --start
+
+#exec --no-startup-id pa-applet
 #bindsym $mod+Ctrl+m exec pavucontrol
 
 # Pulse Audio controls
@@ -312,6 +316,16 @@ exec --no-startup-id nitrogen --restore; sleep 1; compton -b
 #exec --no-startup-id xautolock -time 10 -locker blurlock
 #exec_always --no-startup-id ff-theme-util
 #exec_always --no-startup-id fix_xcursor
+exec --no-startup-id polybar top
+
+
+
+#fix
+#exec --no-startup-id ulauncher
+
+
+
+
 
 #compton (transparency)
 exec --no-startup-id compton
@@ -370,7 +384,7 @@ bar {
         statusline #F9FAF9
         separator  #454947
 
-#                      border  backgr. text
+#	                      border  backgr. text
         focused_workspace  #F9FAF9 #16a085 #292F34
         active_workspace   #595B5B #353836 #FDF6E3
         inactive_workspace #595B5B #202A2E #EEE8D5
