@@ -26,6 +26,10 @@ white1 = #b8b8c8
 [bar/top]
 width = 100%
 height = 27
+
+#space between modules
+module-margin = 1
+
 #tray-padding = 2
 tray-background = #5a000000
 tray-transparent = true
@@ -127,40 +131,38 @@ poll-interval = 5
 ; Default: %H:%M:%S
 time-format = %H:%M
 
+#no animations until fixed icons
 ; Available tags:
 ;   <label-charging> (default)
 ;   <bar-capacity>
 ;   <ramp-capacity>
 ;   <animation-charging>
-format-charging = <animation-charging> <label-charging>
+#format-charging = <animation-charging> <label-charging>
+format-charging = <label-charging>
 
 ; Available tags:
 ;   <label-discharging> (default)
 ;   <bar-capacity>
 ;   <ramp-capacity>
 ;   <animation-discharging>
-format-discharging = <ramp-capacity> <label-discharging>
+#format-discharging = <ramp-capacity> <label-discharging>
+format-discharging = <label-discharging>
 
 ; Available tags:
 ;   <label-full> (default)
 ;   <bar-capacity>
 ;   <ramp-capacity>
-;format-full = <ramp-capacity> <label-full>
+#format-full = <ramp-capacity> <label-full>
+format-full = <label-full>
 
-; Available tokens:
-;   %percentage% (default)
-;   %time%
-;   %consumption% (shows current charge rate in watts)
+
+; Available tokens: %percentage% (default)  %time%  %consumption% (shows current charge rate in watts)
 label-charging = Charging %percentage%%
 
-; Available tokens:
-;   %percentage% (default)
-;   %time%
-;   %consumption% (shows current discharge rate in watts)
+; Available tokens: %percentage% (default)  %time%  %consumption%
 label-discharging = Discharging %percentage%%
 
-; Available tokens:
-;   %percentage% (default)
+; Available tokens: %percentage% (default)
 label-full = Fully charged
 
 ; Only applies if <ramp-capacity> is used
@@ -250,27 +252,25 @@ interval = 2
 ;   <label-volume> (default)
 ;   <ramp-volume>
 ;   <bar-volume>
-format-volume = <ramp-volume> <label-volume>
+#format-volume = <ramp-volume> <label-volume>
+format-volume = <label-volume>
 
-; Available tags:
-;   <label-muted> (default)
-;   <ramp-volume>
-;   <bar-volume>
-;format-muted = <label-muted> <label-volume>
+; Available tags: <label-muted> (default) <ramp-volume> <bar-volume>
+#format-muted = <label-muted> <label-volume>
 
-; Available tokens:
-;   %percentage% (default)
-;label-volume = %percentage%%
+; Available tokens: %percentage% (default)
+label-volume = %percentage%%
 
-; Available tokens:
-;   %percentage% (default)
-label-muted = 🔇 muted
-label-muted-foreground = #666
+; Available tokens: %percentage% (default)
+#label-muted = 🔇 muted
+label-muted = muted (%percentage%%)
+#label-muted-foreground = #666
 
 ; Only applies if <ramp-volume> is used
-ramp-volume-0 = 🔈
-ramp-volume-1 = 🔉
-ramp-volume-2 = 🔊
+#ramp-volume-0 = 🔈
+#ramp-volume-1 = 🔉
+#ramp-volume-2 = 🔊
+
 
 
 
@@ -282,8 +282,12 @@ interval = 1.0
 
 ; See "http://en.cppreference.com/w/cpp/io/manip/put_time" for details on how to format the date string
 ; NOTE: if you want to use syntax tags here you need to use %%{...}
-date =    %%{F#99} %m/%d/%Y %%{F-} %%{F#fff} %I:%M %p %%{F-}
-date-alt =    %%{F#fff} %A, %B %d, %Y %%{F-} %%{F#fff} %I:%M %p %%{F-}
+#colors
+#date = %%{F#99} %m/%d/%Y %%{F-} %%{F#fff} %I:%M %p %%{F-}
+#date-alt = %%{F#fff} %A, %B %d, %Y %%{F-} %%{F#fff} %I:%M %p %%{F-}
+
+date = %m/%d/%Y %I:%M %p
+date-alt = %A, %B %d, %Y %I:%M %p
 
 ; Available tags:
 ;   <label> (default)
@@ -321,7 +325,8 @@ fixed-values = true
 
 ; Spacing between entries
 ; Default: 2
-spacing = 4
+#spacing = 4
+spacing = 1
 
 ; Available tags:
 ;   <label-mounted> (default)
@@ -344,7 +349,8 @@ format-unmounted = <label-unmounted>
 ;   %free%
 ;   %used%
 ; Default: %mountpoint% %percentage_free%%
-label-mounted = %mountpoint%: %percentage_free%% of %total%
+label-mounted = %mountpoint%: %free%
+#label-mounted = %mountpoint%: %percentage_free%% of %total%
 
 ; Available tokens:
 ;   %mountpoint%
