@@ -1,0 +1,36 @@
+sw_volume: 100
+audio_device_state:1:my pulseaudio
+state: play
+current: 15
+time: 3.665000
+random: 1
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/02 オリジナルドラマ その1.flac
+1:[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/03 SHINY DAYS (TV SIZE).flac
+2:[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/04 オリジナルドラマ その2.flac
+3:[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/05 キャンプ場のテーマ～本栖湖～.flac
+4:[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/06 野クルの時間 (わちゃわちゃ!).flac
+5:[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/07 ソロキャン△のすすめ.flac
+6:[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/08 ゆるやかな時間.flac
+7:[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/09 オリジナルドラマ その3.flac
+8:[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/10 キャンプ場のテーマ～麓～.flac
+9:[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/11 おしゃべりとマグカップ.flac
+10:[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/12 ごーいんぐマイウェイ.flac
+11:[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/13 夜明けの深呼吸.flac
+12:[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/14 ワクパラ!.flac
+13:[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/15 オリジナルドラマ その4.flac
+14:[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/16 キャンプ場のテーマ～高ボッチ、イーストウッド～.flac
+15:[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/17 野クルの時間 (わちゃ、、、).flac
+16:[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/18 ごーいんぐユアウェイ.flac
+17:[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/19 ゆるりの掟.flac
+18:[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/20 たじたじのた.flac
+19:[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/21 オリジナルドラマ その5.flac
+20:[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/22 ふゆびより (弾きがたりver.).flac
+21:[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/01 ゆるキャン△のテーマ.flac
+playlist_end

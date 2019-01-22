@@ -47,10 +47,10 @@ locale = en_CA.UTF-8
 #module-margin-left = 5
 #module-margin-right = 3
 
-font-0 = Inconsolata:size=11;1
-font-1 = NotoMono:size=10;1
-font-2 = MaterialIcons:size=10;2
-#font-4 = DejaVuSans:size=10;2
+font-0 = Inconsolata:size=10;1
+font-1 = NotoMono:size=9;1
+font-2 = MaterialIcons:size=9;2
+#font-4 = DejaVuSans:size=9;2
 #dejavusans looks bad
 #font-0 = FontAwesome:size=8;0
 
@@ -58,7 +58,7 @@ font-2 = MaterialIcons:size=10;2
 
 modules-left = i3
 modules-center = title
-modules-right = filesystem pulseaudio date battery
+modules-right = wireless-network filesystem pulseaudio date battery
 #modules-center = memory
 #modules-right = volume backlight battery powermenu
 
@@ -157,13 +157,13 @@ format-full = <label-full>
 
 
 ; Available tokens: %percentage% (default)  %time%  %consumption% (shows current charge rate in watts)
-label-charging = Charging %percentage%%
+label-charging =  B: +%percentage%%
 
 ; Available tokens: %percentage% (default)  %time%  %consumption%
-label-discharging = Discharging %percentage%%
+label-discharging = B: %percentage%%
 
 ; Available tokens: %percentage% (default)
-label-full = Fully charged
+label-full = B: Full
 
 ; Only applies if <ramp-capacity> is used
 ramp-capacity-0 = 
@@ -256,14 +256,13 @@ interval = 2
 format-volume = <label-volume>
 
 ; Available tags: <label-muted> (default) <ramp-volume> <bar-volume>
-#format-muted = <label-muted> <label-volume>
+#format-muted = <label-muted>
 
 ; Available tokens: %percentage% (default)
-label-volume = %percentage%%
+label-volume = V: %percentage%%
 
 ; Available tokens: %percentage% (default)
-#label-muted = 🔇 muted
-label-muted = muted (%percentage%%)
+label-muted = V: muted (%percentage%%)
 #label-muted-foreground = #666
 
 ; Only applies if <ramp-volume> is used
@@ -677,3 +676,189 @@ type = internal/xwindow
 ; Used instead of label when there is no window title
 #label-empty = Empty
 #label-empty-foreground = #707880
+
+
+
+
+
+
+[module/wired-network]
+type = internal/network
+interface = eth1
+; Seconds to sleep between updates
+; Default: 1
+interval = 3.0
+
+; Test connectivity every Nth update
+; A value of 0 disables the feature
+; NOTE: Experimental (needs more testing)
+; Default: 0
+;ping-interval = 3
+
+; @deprecated: Define min width using token specifiers (%downspeed:min% and %upspeed:min%)
+; Minimum output width of upload/download rate
+; Default: 3
+udspeed-minwidth = 5
+
+; Accumulate values from all interfaces
+; when querying for up/downspeed rate
+; Default: false
+accumulate-stats = true
+
+; Consider an `UNKNOWN` interface state as up.
+; Some devices have an unknown state, even when they're running
+; Default: false
+unknown-as-up = true
+
+; Available tags:
+;   <label-connected> (default)
+;   <ramp-signal>
+format-connected = <ramp-signal> <label-connected>
+
+; Available tags:
+;   <label-disconnected> (default)
+format-disconnected = <label-disconnected>
+
+; Available tags:
+;   <label-connected> (default)
+;   <label-packetloss>
+;   <animation-packetloss>
+format-packetloss = <animation-packetloss> <label-connected>
+
+; Available tokens:
+;   %ifname%    [wireless+wired]
+;   %local_ip%  [wireless+wired]
+;   %local_ip6% [wireless+wired]
+;   %essid%     [wireless]
+;   %signal%    [wireless]
+;   %upspeed%   [wireless+wired]
+;   %downspeed% [wireless+wired]
+;   %linkspeed% [wired]
+; Default: %ifname% %local_ip%
+label-connected = %essid% %downspeed:9%
+label-connected-foreground = #eefafafa
+
+; Available tokens:
+;   %ifname%    [wireless+wired]
+; Default: (none)
+label-disconnected = not connected
+label-disconnected-foreground = #66ffffff
+
+; Available tokens:
+;   %ifname%    [wireless+wired]
+;   %local_ip%  [wireless+wired]
+;   %local_ip6% [wireless+wired]
+;   %essid%     [wireless]
+;   %signal%    [wireless]
+;   %linkspeed% [wired]
+; Default: (none)
+;label-packetloss = %essid%
+;label-packetloss-foreground = #eefafafa
+
+; Only applies if <ramp-signal> is used
+ramp-signal-0 = 😱
+ramp-signal-1 = 😠
+ramp-signal-2 = 😒
+ramp-signal-3 = 😊
+ramp-signal-4 = 😃
+ramp-signal-5 = 😈
+
+; Only applies if <animation-packetloss> is used
+animation-packetloss-0 = ⚠
+animation-packetloss-0-foreground = #ffa64c
+animation-packetloss-1 = 📶
+animation-packetloss-1-foreground = #000000
+; Framerate in milliseconds
+animation-packetloss-framerate = 500
+
+
+
+
+
+[module/wireless-network]
+type = internal/network
+interface = wlp0s20f3
+; Seconds to sleep between updates
+; Default: 1
+interval = 3.0
+
+; Test connectivity every Nth update
+; A value of 0 disables the feature
+; NOTE: Experimental (needs more testing)
+; Default: 0
+;ping-interval = 3
+
+; @deprecated: Define min width using token specifiers (%downspeed:min% and %upspeed:min%)
+; Minimum output width of upload/download rate
+; Default: 3
+udspeed-minwidth = 5
+
+; Accumulate values from all interfaces
+; when querying for up/downspeed rate
+; Default: false
+#accumulate-stats = true
+
+; Consider an `UNKNOWN` interface state as up.
+; Some devices have an unknown state, even when they're running
+; Default: false
+unknown-as-up = true
+
+; Available tags: <label-connected> (default) <ramp-signal>
+#format-connected = <ramp-signal>
+
+; Available tags:
+;   <label-disconnected> (default)
+#format-disconnected = <label-disconnected>
+
+; Available tags:
+;   <label-connected> (default)
+;   <label-packetloss>
+;   <animation-packetloss>
+#format-packetloss = <animation-packetloss> <label-connected>
+
+; Available tokens:
+;   %ifname%    [wireless+wired]
+;   %local_ip%  [wireless+wired]
+;   %local_ip6% [wireless+wired]
+;   %essid%     [wireless]
+;   %signal%    [wireless]
+;   %upspeed%   [wireless+wired]
+;   %downspeed% [wireless+wired]
+;   %linkspeed% [wired]
+; Default: %ifname% %local_ip%
+label-connected = %essid%: %signal%% at %local_ip%
+#label-connected-foreground = #eefafafa
+
+; Available tokens:
+;   %ifname%    [wireless+wired]
+; Default: (none)
+#label-disconnected = not Connected
+#label-disconnected-foreground = #66ffffff
+
+; Available tokens:
+;   %ifname%    [wireless+wired]
+;   %local_ip%  [wireless+wired]
+;   %local_ip6% [wireless+wired]
+;   %essid%     [wireless]
+;   %signal%    [wireless]
+;   %linkspeed% [wired]
+; Default: (none)
+;label-packetloss = %essid%
+;label-packetloss-foreground = #eefafafa
+
+; Only applies if <ramp-signal> is used
+ramp-signal-0 = 😱
+ramp-signal-1 = 😠
+ramp-signal-2 = 😒
+ramp-signal-3 = 😊
+ramp-signal-4 = 😃
+ramp-signal-5 = 😈
+
+; Only applies if <animation-packetloss> is used
+animation-packetloss-0 = ⚠
+animation-packetloss-0-foreground = #ffa64c
+animation-packetloss-1 = 📶
+animation-packetloss-1-foreground = #000000
+; Framerate in milliseconds
+animation-packetloss-framerate = 500
+
