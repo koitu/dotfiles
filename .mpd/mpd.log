@@ -3228,3 +3228,482 @@ Jan 22 12:57 : zeroconf: No global port, disabling zeroconf
 Jan 22 12:57 : config: option 'mixer_control' on line 214 was not recognized
 Jan 22 13:06 : client: [0] opened from [::1]:56232
 Jan 22 13:07 : client: [0] closed
+Jan 22 13:08 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/17 野クルの時間 (わちゃ、、、).flac"
+Jan 22 13:10 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/03 SHINY DAYS (TV SIZE).flac"
+Jan 22 13:12 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/13 夜明けの深呼吸.flac"
+Jan 22 13:14 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/06 野クルの時間 (わちゃわちゃ!).flac"
+Jan 22 13:16 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/21 オリジナルドラマ その5.flac"
+Jan 22 13:22 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/05 キャンプ場のテーマ～本栖湖～.flac"
+Jan 22 13:23 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/09 オリジナルドラマ その3.flac"
+Jan 22 13:30 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/16 キャンプ場のテーマ～高ボッチ、イーストウッド～.flac"
+Jan 22 13:32 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/07 ソロキャン△のすすめ.flac"
+Jan 22 13:34 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/12 ごーいんぐマイウェイ.flac"
+Jan 22 13:34 : exception: Failed to play on "my pulseaudio" (pulse): disconnected
+Jan 23 13:01 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 23 13:01 : config: option 'mixer_control' on line 214 was not recognized
+Jan 23 13:01 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 23 13:01 : client: [0] opened from 127.0.0.1:57030
+Jan 23 13:01 : avahi: Service 'Music Player @ Someone-PC' successfully established.
+Jan 23 13:01 : client: [1] opened from 127.0.0.1:57034
+Jan 23 13:01 : client: [1] closed
+Jan 23 13:01 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/12 ごーいんぐマイウェイ.flac"
+Jan 23 13:03 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/18 ごーいんぐユアウェイ.flac"
+Jan 23 13:05 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/20 たじたじのた.flac"
+Jan 23 13:05 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/09 オリジナルドラマ その3.flac"
+Jan 23 13:05 : exception: Failed to play on "my pulseaudio" (pulse): disconnected
+Jan 23 13:06 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 23 13:06 : config: option 'mixer_control' on line 214 was not recognized
+Jan 23 13:06 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 23 13:06 : client: [0] opened from 127.0.0.1:52704
+Jan 23 13:06 : avahi: Service 'Music Player @ Someone-PC' successfully established.
+Jan 23 13:07 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/09 オリジナルドラマ その3.flac"
+Jan 23 13:09 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/15 オリジナルドラマ その4.flac"
+Jan 23 13:11 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/07 ソロキャン△のすすめ.flac"
+Jan 23 13:12 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/02 オリジナルドラマ その1.flac"
+Jan 23 13:14 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/06 野クルの時間 (わちゃわちゃ!).flac"
+Jan 23 13:16 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/17 野クルの時間 (わちゃ、、、).flac"
+Jan 23 13:18 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/14 ワクパラ!.flac"
+Jan 23 13:20 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/22 ふゆびより (弾きがたりver.).flac"
+Jan 23 13:22 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/08 ゆるやかな時間.flac"
+Jan 23 13:24 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/12 ごーいんぐマイウェイ.flac"
+Jan 23 13:26 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/18 ごーいんぐユアウェイ.flac"
+Jan 23 13:27 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/03 SHINY DAYS (TV SIZE).flac"
+Jan 23 13:34 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/16 キャンプ場のテーマ～高ボッチ、イーストウッド～.flac"
+Jan 23 13:36 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/19 ゆるりの掟.flac"
+Jan 23 13:39 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/13 夜明けの深呼吸.flac"
+Jan 23 13:40 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/20 たじたじのた.flac"
+Jan 23 13:45 : exception: Failed to play on "my pulseaudio" (pulse): disconnected
+Jan 23 13:45 : exception: Failed to open audio output
+Jan 23 13:46 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/05 キャンプ場のテーマ～本栖湖～.flac"
+Jan 23 13:46 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 23 13:46 : config: option 'mixer_control' on line 214 was not recognized
+Jan 23 13:46 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 23 13:46 : client: [0] opened from 127.0.0.1:36532
+Jan 23 13:46 : avahi: Service 'Music Player @ Someone-PC' successfully established.
+Jan 23 13:48 : client: [1] opened from 127.0.0.1:36542
+Jan 23 15:18 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/11 おしゃべりとマグカップ.flac"
+Jan 25 12:37 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 25 12:37 : config: option 'mixer_control' on line 214 was not recognized
+Jan 25 12:37 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 25 12:37 : avahi: Service 'Music Player @ Someone-PC' successfully established.
+Jan 25 12:37 : client: [0] opened from 127.0.0.1:45614
+Jan 25 13:02 : client: [1] opened from 127.0.0.1:45806
+Jan 25 13:03 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/11 おしゃべりとマグカップ.flac"
+Jan 25 13:06 : player: played "[161012]Mili 2nd Album「Miracle Milk」[320K+BK(JPG)]/Red Dahlia.mp3"
+Jan 25 13:10 : player: played "look over this/eluun/Eluun_LittleSweetness_305638830.mp3"
+Jan 25 13:10 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 13:13 : player: played "【DeeMo】 Song Collection + Game Movies/Deemo's Collection Vol. 2/Deemo 2.0 - Edmud Fu - Living In The One.mp3"
+Jan 25 13:15 : player: played "Nichijou Original Soundtrack [16bit-44.1kHz FLAC] (2011)/(43) [野見祐二] ミステリアスで不思議な女.flac"
+Jan 25 13:20 : player: played "look over this/Shwin - Castaway [Macarize].mp3"
+Jan 25 13:24 : player: played "V.A/06 V.A. - Yunomi - Two great lights - 神様の渦 - (feat. nicamoq).mp3"
+Jan 25 13:29 : player: played "KOTONOHOUSE - but you don't EP [FLAC]/KOTONOHOUSE - but you don't EP - 01 wake up.flac"
+Jan 25 13:32 : player: played "look over this/Feelin' Fine.mp3"
+Jan 25 13:35 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 13:35 : player: played "Toradora! OST Collection [FLAC]/Toradora! OP Single - Pre-Parade/03 Pre-Parade (off vocal ver.).flac"
+Jan 25 13:38 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 13:38 : player: played "look over this/__update (needs metadata)/Moonlight Love - Piano music-EZESm658x_o.m4a"
+Jan 25 13:40 : player: played "mia ost/Made in Abyss OST/1-10 Maul.m4a"
+Jan 25 13:48 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 13:48 : player: played "look over this/synthion/MOMOLAND 모모랜드 - BBoom BBoom 뿜뿜 (Synthion Hardcore Edit).mp3"
+Jan 25 13:53 : player: played "look over this/__update (needs metadata)/米津玄師 MV「orion」-lzAyrgSqeeE.m4a"
+Jan 25 13:57 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 13:57 : player: played "look over this/___look over/_random favs/Eluun_6.HappyNostalgia-SianAreaFusq_196708991.mp3"
+Jan 25 14:01 : player: played "look over this/__update (needs metadata)/Re -plus - Everlasting Truth-jDoAZw7Yei0.m4a"
+Jan 25 14:04 : player: played "look over this/wispx/WispX_MapleStory-TempleofTime(WispXRemix)_268805911.mp3"
+Jan 25 14:07 : player: played "look over this/rhodz/Rhodz - Endless Fantasy.mp3"
+Jan 25 14:09 : player: played "Nichijou Original Soundtrack [16bit-44.1kHz FLAC] (2011)/(26) [野見祐二] 可愛く走る走る走る.flac"
+Jan 25 14:13 : player: played "look over this/Yume Hiyori.mp3"
+Jan 25 14:15 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 14:15 : player: played "look over this/Tecchi - Euphoria.mp3"
+Jan 25 14:21 : player: played "look over this/__update (needs metadata)/RADWIMPS - Nandemonaiya [Your name._Movie version] ซับไทย-TPmvTGvhHas.m4a"
+Jan 25 14:24 : player: played "look over this/wispx/WispX_MelonSoda_278404519.mp3"
+Jan 25 14:27 : player: played "Mahoutsukai no Yome [FLAC]/[180530] The Ancient Magus Brideː Those Awaiting a Star／OST 3/Disc 2 The Ancient Magus Bride OST 3/30. Ending Story.flac"
+Jan 25 14:31 : player: played "Shoujo Shuumatsu Ryokou/[Sheldonsuckz] Kenichiro Suehiro - Shoujo Shuumatsu Ryokou Original Soundtrack [FLAC]/Disc 2/12 Bunmei no Konseki.flac"
+Jan 25 14:34 : player: played "look over this/andora/You Know.mp3"
+Jan 25 14:35 : player: played "Mahoutsukai no Yome [FLAC]/[171220] The Ancient Magus Bride OST/09. Mahou no Silhouette.flac"
+Jan 25 14:36 : player: played "Mahoutsukai no Yome [FLAC]/[180530] The Ancient Magus Brideː Those Awaiting a Star／OST 3/Disc 1 The Ancient Magus Brideː Those Awaiting a Star OST/20. Yokan….flac"
+Jan 25 14:38 : player: played "Mahoutsukai no Yome [FLAC]/[171220] The Ancient Magus Bride OST/13. Chise’s Pastoral.flac"
+Jan 25 14:42 : player: played "ALL K-391 SONGS.zip/Sunshine (album)/K-391 - C'mon.mp3"
+Jan 25 14:46 : player: played "look over this/magnified/Ulchero - Blurred Vision [BUY = FREE DOWNLOAD].mp3"
+Jan 25 14:48 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 14:48 : player: played "Mahoutsukai no Yome [FLAC]/[180530] The Ancient Magus Brideː Those Awaiting a Star／OST 3/Disc 1 The Ancient Magus Brideː Those Awaiting a Star OST/15. Mukuna Hito.flac"
+Jan 25 14:53 : player: played "look over this/__update (needs metadata)/【初音ミク】 ヒビカセ 【オリジナル】-TkroHwQYpFE.m4a"
+Jan 25 14:54 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 14:55 : player: played "violet evergarden/[Album] Original Soundtrack VIOLET EVERGARDEN - Automemories [FLAC 44kHz-16bit]/13. Back in Business.flac"
+Jan 25 14:59 : player: played "look over this/__update (needs metadata)/前前前世 (movie ver.) RADWIMPS MV-PDSkFeMVNFs.m4a"
+Jan 25 15:02 : player: played "【DeeMo】 Song Collection + Game Movies/Deemo's Collection Vol. 1B/Deemo - Invite.mp3"
+Jan 25 15:06 : player: played "Toradora! OST Collection [FLAC]/Toradora Portable! ED Single - Complete - Please Freeze/01 - Complete.flac"
+Jan 25 15:07 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 15:07 : player: played "Mahoutsukai no Yome [FLAC]/[180530] The Ancient Magus Brideː Those Awaiting a Star／OST 3/Disc 1 The Ancient Magus Brideː Those Awaiting a Star OST/28. CLOCKWORK QUICK AND LIGHTNING SLOW [A Spell to make all things well].flac"
+Jan 25 15:12 : player: played "look over this/__update (needs metadata)/米津玄師　MV『恋と病熱』-GiPdefbPa0k.m4a"
+Jan 25 15:13 : player: played "Nichijou Original Soundtrack [16bit-44.1kHz FLAC] (2011)/(87) [野見祐二] フェイ王国 ～最後の聖戦～.flac"
+Jan 25 15:15 : player: played "The girl that leap across time Original Sound Track/09 ûóùêé¦ïLë».flac"
+Jan 25 15:18 : player: played "violet evergarden/[Album] Original Soundtrack VIOLET EVERGARDEN - Automemories [FLAC 44kHz-16bit]/11. The Birth of a Legend.flac"
+Jan 25 15:25 : player: played "in the blue shirt/MARU137_Porter_Robinson_Re_Flicker/03 Flicker (Carpainter Remix).mp3"
+Jan 25 15:28 : player: played "ALL K-391 SONGS.zip/Sunshine (album)/K-391 -Extreme Sport.wav"
+Jan 25 15:31 : player: played "look over this/OIÜ - Komorebi.mp3"
+Jan 25 15:34 : player: played "look over this/Batsu_(BatsuRemix)_335333014.mp3"
+Jan 25 15:36 : player: played "Mahoutsukai no Yome [FLAC]/[180530] The Ancient Magus Brideː Those Awaiting a Star／OST 3/Disc 1 The Ancient Magus Brideː Those Awaiting a Star OST/18. Chiisana Te ni Ookina Shigoto.flac"
+Jan 25 15:39 : player: played "Toradora! OST Collection [FLAC]/Toradora! Best Album - Happyend/Disc 2 - Original Soundtrack Extora!/03 - Lost my pieces (Piano Ver.).flac"
+Jan 25 15:43 : player: played "Toradora! OST Collection [FLAC]/Toradora! ED2 Single - Orange/04 Koi Kurage (off vocal ver.).flac"
+Jan 25 15:45 : player: played "【DeeMo】 Song Collection + Game Movies/Deemo's Collection Vol. 1B/Deemo - Pulse.mp3"
+Jan 25 15:47 : player: played "look over this/nakano4/nakano4_Bright_38889061.mp3"
+Jan 25 15:53 : player: played "ALL K-391 SONGS.zip/Overture (album)/Drop it! (Remastered)/K-391 - Drop it (remastered).wav"
+Jan 25 15:57 : player: played "look over this/Itro_Itro-Complete_306743131.mp3"
+Jan 25 15:59 : player: played "look over this/__league of legends/The Climb - Music From The Cinematic.mp3"
+Jan 25 16:03 : player: played "look over this/elliot hsu/DIVR_ElliotHsu-Utopia_228350708.mp3"
+Jan 25 16:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 16:06 : player: played "look over this/amidst/ClariS - Irony (Amidst Remix).mp3"
+Jan 25 16:09 : player: played "look over this/__made in abyss/26  Pathway-SvPKUM1bzTI.m4a"
+Jan 25 16:12 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 16:12 : player: played "look over this/kozoro/Remember Me.mp3"
+Jan 25 16:17 : player: played "look over this/__update (needs metadata)/米津玄師 MV「Flowerwall」-Y4_vXzyOJHE.m4a"
+Jan 25 16:22 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 16:22 : player: played "look over this/__bad youtube to mp3/Thao-Nguyen-Xanh-Sad-Romance.mp3"
+Jan 25 16:27 : player: played "look over this/__update (needs metadata)/美波「ライラック」Music Video-GQ3V50XoLOM.m4a"
+Jan 25 16:31 : player: played "look over this/サマータイム・メモリーズ.mp3"
+Jan 25 16:36 : player: played "look over this/海狐/[Apollo第7回] Moonrise [Nemesis of the Satellite 2017].mp3"
+Jan 25 16:38 : player: played "look over this/So Sweet.mp3"
+Jan 25 16:42 : player: played "look over this/__bad youtube to mp3/Gift.mp3"
+Jan 25 16:44 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 16:44 : player: played "look over this/【#BOFU2017】夢_あるいは在りし日の【FRENZ2017】.mp3"
+Jan 25 16:47 : player: played "look over this/__update (needs metadata)/Kondor - Good Night-XH9sS9ALIHw.m4a"
+Jan 25 16:50 : player: played "look over this/nakano4/nakano4_Raven_161369537.mp3"
+Jan 25 16:54 : player: played "look over this/dreamscape/Dreamscape_Defsharp-Time_298207966.mp3"
+Jan 25 16:57 : player: played "【DeeMo】 Song Collection + Game Movies/Knight Iris Collection/Deemo - Knight Iris - The Red Coronation.mp3"
+Jan 25 16:59 : player: played "Thomas Hood/Thomas Hood - Sounds of Life - 08 Serenity.mp3"
+Jan 25 17:01 : player: played "Nichijou Original Soundtrack [16bit-44.1kHz FLAC] (2011)/(89) [野見祐二] 悟りの境地.flac"
+Jan 25 17:05 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 17:05 : player: played "look over this/famous spear/Dreamscape_FamousSpear-WonderWhy_306370124.mp3"
+Jan 25 17:07 : player: played "look over this/__update (needs metadata)/米茶 - 何處身安《Piano _ New Age Music _ 輕音樂 _ 鋼琴 _ 新世紀音樂》-hZgGhTP1D_Y.m4a"
+Jan 25 17:11 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 17:12 : player: played "Mahoutsukai no Yome [FLAC]/[171220] The Ancient Magus Bride OST/16. Libero Aura.flac"
+Jan 25 17:16 : player: played "in the blue shirt/in the blue shirt - toward morning/in the blue shirt - toward morning - 04 in and out.m4a"
+Jan 25 17:17 : player: played "look over this/__epic mountain/EpicMountain_Conspiracy(originalmusic-kurzgesagtsciencevideos)_182005338.mp3"
+Jan 25 17:20 : player: played "Nichijou Original Soundtrack [16bit-44.1kHz FLAC] (2011)/(81) [野見祐二] フェイ王国 ～ドルフの野望～.flac"
+Jan 25 17:24 : player: played "V.A/04 snug murk + affable noise - snug murk - dream.mp3"
+Jan 25 17:27 : player: played "【DeeMo】 Song Collection + Game Movies/Deemo Movies/Deemo staffroll.mp4"
+Jan 25 17:32 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 17:32 : player: played "ALL K-391 SONGS.zip/All Singles/K-391 - Everybody (Original Mix).mp3"
+Jan 25 17:35 : player: played "mia ost/Made in Abyss OST/1-14 2 Months.m4a"
+Jan 25 17:36 : player: played "your name/[FLAC] Radwimps - Your Name/School road.flac"
+Jan 25 17:37 : player: played "Nichijou Original Soundtrack [16bit-44.1kHz FLAC] (2011)/(36) [野見祐二] ヘルベチカスタンダード～その3～.flac"
+Jan 25 17:41 : player: played "[161012]Mili 2nd Album「Miracle Milk」[320K+BK(JPG)]/Ga1ahad and Scientific Witchery.mp3"
+Jan 25 17:45 : player: played "look over this/__k-391/K-391_OutdoorChallenge_161158064.mp3"
+Jan 25 17:49 : player: played "look over this/alwone/Alwone_Alwone-Silence_312020995.mp3"
+Jan 25 17:53 : player: played "Mahoutsukai no Yome [FLAC]/[180207] OP2 - You - May'n/04. You (without May'n).flac"
+Jan 25 17:56 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 17:57 : player: played "Mahoutsukai no Yome [FLAC]/[171101] ED1 - 環-cycle- - Hana Itoki/03. 環-cycle- (instrumental).flac"
+Jan 25 17:58 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 17:58 : player: played "mia ost/Made in Abyss OST/2-09 Forces Beyond Control.m4a"
+Jan 25 18:03 : player: played "look over this/__update (needs metadata)/【MAD】 I wanna see your smile 我希望看到你的微笑 中文字幕-svqjIYDUDgI.m4a"
+Jan 25 18:07 : player: played "Toradora! OST Collection [FLAC]/Toradora! Best Album - Happyend/Disc 1 - √HAPPYEND/15 - √HAPPYEND.flac"
+Jan 25 18:08 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 18:08 : player: played "Nichijou Original Soundtrack [16bit-44.1kHz FLAC] (2011)/(10) [野見祐二] コミカルに説教.flac"
+Jan 25 18:12 : player: played "look over this/__update (needs metadata)/Remo Prototype [CV.Hanamori Yumiri] - Sendan Life-qu1fnhI65mk.m4a"
+Jan 25 18:17 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 18:17 : player: played "in the blue shirt/MARU151/06 Secret crush (Soleil Soleil Remix).mp3"
+Jan 25 18:22 : player: played "look over this/__update (needs metadata)/No Game No Life - Zero Movie Theme Song - THERE IS A REASON _ Konomi Suzuki [ENG SUB]-wrpRv1pyV6I.m4a"
+Jan 25 18:23 : player: played "look over this/Hello My Dear Lovely.mp3"
+Jan 25 18:24 : player: played "your name/[Maid-chan] RADWIMPS - Kimi no Na wa. (Original Soundtrack) (FLAC)/12. 記憶を呼び起こす瀧.flac"
+Jan 25 18:27 : player: played "Mahoutsukai no Yome [FLAC]/[180530] The Ancient Magus Brideː Those Awaiting a Star／OST 3/Disc 1 The Ancient Magus Brideː Those Awaiting a Star OST/21. Chise no Kanashimi.flac"
+Jan 25 18:29 : player: played "Mahoutsukai no Yome [FLAC]/[180530] The Ancient Magus Brideː Those Awaiting a Star／OST 3/Disc 2 The Ancient Magus Bride OST 3/12. Hane no Notte Yami no Tanima e.flac"
+Jan 25 18:32 : player: played "Mahoutsukai no Yome [FLAC]/[180530] The Ancient Magus Brideː Those Awaiting a Star／OST 3/Disc 1 The Ancient Magus Brideː Those Awaiting a Star OST/24. Miura no Omoi.flac"
+Jan 25 18:34 : player: played "【DeeMo】 Song Collection + Game Movies/Rayark Selection Vol. 1/Deemo - Vivere La Vita.mp3"
+Jan 25 18:35 : player: played "look over this/__k-391/K-391_HowToMakeAKittySong_284279108.mp3"
+Jan 25 18:38 : player: played "your name/[Maid-chan] RADWIMPS - Kimi no Na wa. (Original Soundtrack) (FLAC)/20. 町長説得.flac"
+Jan 25 18:38 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 18:38 : player: played "【DeeMo】 Song Collection + Game Movies/Deemo Movies/Deemo ac10.mp4"
+Jan 25 18:43 : player: played "look over this/__update (needs metadata)/Renai Circulation「恋愛サーキュレーション」歌ってみた【＊なみりん】-uKxyLmbOc0Q.m4a"
+Jan 25 18:46 : player: played "look over this/snails house/UjicoSnailsHouse_GrapeSoda(VIP)_265663995.mp3"
+Jan 25 18:49 : player: played "look over this/R4NGER_MargesMedicine_68753512.mp3"
+Jan 25 18:56 : player: played "look over this/LimeKankitsu_(Lime)-Smiling(longver.)_247998127.mp3"
+Jan 25 18:57 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/17 野クルの時間 (わちゃ、、、).flac"
+Jan 25 19:00 : player: played "look over this/itsuki_amakusa/Itsuki_Amakusa_Metropolis_130099955.mp3"
+Jan 25 19:04 : player: played "in the blue shirt/MARU137_Porter_Robinson_Re_Flicker/05 Flicker (Tomggg Remix).mp3"
+Jan 25 19:06 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 19:06 : player: played "park bird/Collecting Pieces/05 park bird - Cave Slimes.mp3"
+Jan 25 19:10 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 19:11 : player: played "look over this/__update (needs metadata)/들으면 녹아내리는 노래-ba71RpjrNPM.m4a"
+Jan 25 19:13 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 19:13 : player: played "langley school music project/The Langley Schools Music Project - Mandy (Official)-7tZAjSLzMbc.m4a"
+Jan 25 19:15 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 19:15 : player: played "mia ost/Made in Abyss OST/2-12 Walking the Tightrope.m4a"
+Jan 25 19:20 : player: played "look over this/__update (needs metadata)/米津玄師　MV『vivi』-W-Tun8O-Tjk.m4a"
+Jan 25 19:22 : player: played "look over this/wispx/WispX_SparklingTides_232023019.mp3"
+Jan 25 19:25 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 19:26 : player: played "Toradora! OST Collection [FLAC]/Toradora! Original Soundtrack/02 Magic of love.flac"
+Jan 25 19:27 : player: played "the place we promised in our early days/01- Main Theme.m4a"
+Jan 25 19:29 : player: played "Mahoutsukai no Yome [FLAC]/[180326] The Ancient Magus Bride OST 2/09. You [TV-EDIT].flac"
+Jan 25 19:30 : player: played "your name/[FLAC] Radwimps - Your Name/Cafe at last.flac"
+Jan 25 19:32 : player: played "look over this/seatrus - Peluche.mp3"
+Jan 25 19:34 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 2/01 オリジナルドラマ その6.flac"
+Jan 25 19:35 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 2/24 万歳山頂.flac"
+Jan 25 19:39 : player: played "look over this/___look over/_random favs/PorterRobinson_PorterRobinsonMadeon-Shelter_277870779.mp3"
+Jan 25 19:44 : player: played "look over this/snails house/UjicoSnailsHouse_Adventure[PixelGalaxy]_307354324.mp3"
+Jan 25 19:50 : player: played "look over this/__epic mountain/EpicMountain_TheWaronDrugs_249669319.mp3"
+Jan 25 19:52 : player: played "Thomas was alone/David Housden - Thomas Was Alone - Original Soundtrack (Deluxe Edition) - 04 United We Stand.mp3"
+Jan 25 19:56 : player: played "look over this/feint/Face Down.mp3"
+Jan 25 19:58 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 19:58 : player: played "Mahoutsukai no Yome [FLAC]/[180326] The Ancient Magus Bride OST 2/20. Hanakazoe.flac"
+Jan 25 20:02 : player: played "look over this/__update (needs metadata)/中二病でも恋がしたいED INSIDE IDENTITY     full-314bWYDGKjk.m4a"
+Jan 25 20:04 : player: played "【DeeMo】 Song Collection + Game Movies/Deemo's Collection Vol. 1A/Deemo - Platinum.mp3"
+Jan 25 20:08 : player: played "look over this/stahl!/Stahl - Limitless.mp3"
+Jan 25 20:09 : player: played "Nichijou Original Soundtrack [16bit-44.1kHz FLAC] (2011)/(56) [野見祐二] 喜びと幸せと.flac"
+Jan 25 20:16 : player: played "look over this/ryzu/Ryzu_Kozorofeat.Noctilucent-ASpringWithoutYou(RyzuRemix)_210563924.mp3"
+Jan 25 20:21 : player: played "ALL K-391 SONGS.zip/Sunshine (album)/K-391 - Summertime.wav"
+Jan 25 20:23 : player: played "Thomas Hood/Thomas Hood - Sounds of Life - 01 Awaken.mp3"
+Jan 25 20:24 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 20:24 : player: played "Nichijou Original Soundtrack [16bit-44.1kHz FLAC] (2011)/(18) [野見祐二] 中之条のテーマ.flac"
+Jan 25 20:25 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 20:26 : player: played "the place we promised in our early days/10 - Omen.m4a"
+Jan 25 20:30 : player: played "look over this/__update (needs metadata)/Kabaneri of the Iron Fortress ED FULL 「ninelie」／Aimer with chelly (EGOIST)-3ePxx3VI_OQ.m4a"
+Jan 25 20:32 : player: played "Toradora! OST Collection [FLAC]/Toradora! Original Soundtrack/17 Great escape.flac"
+Jan 25 20:34 : player: played "violet evergarden/[Album] Original Soundtrack VIOLET EVERGARDEN - Automemories [FLAC 44kHz-16bit]/17. Strangeling.flac"
+Jan 25 20:36 : player: played "Mahoutsukai no Yome [FLAC]/[180530] The Ancient Magus Brideː Those Awaiting a Star／OST 3/Disc 2 The Ancient Magus Bride OST 3/23. Cave's Sadness.flac"
+Jan 25 20:41 : player: played "ALL K-391 SONGS.zip/All Singles/K-391 - Electrode.mp3"
+Jan 25 20:44 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 20:44 : player: played "【DeeMo】 Song Collection + Game Movies/Deemo's Collection Vol. 1A/Deemo - Nine Point Eight.mp3"
+Jan 25 20:47 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 20:48 : player: played "langley school music project/The Langley Schools Music Project - Desperado (Official)-s9F-no5av-s.m4a"
+Jan 25 20:50 : player: played "langley school music project/The Langley Schools Music Project - Help Me, Rhonda (Official)-jFIMTkNDobU.m4a"
+Jan 25 20:54 : player: played "look over this/Synthion & Anemoi - Lost.mp3"
+Jan 25 21:00 : player: played "look over this/rjnk__333392519.mp3"
+Jan 25 21:35 : player: played "Mahoutsukai no Yome [FLAC]/[171220] The Ancient Magus Bride OST/28. 環-cycle- [TV-EDIT].flac"
+Jan 25 21:38 : player: played "Mahoutsukai no Yome [FLAC]/[180326] The Ancient Magus Bride OST 2/03. Mizukagami no Hito.flac"
+Jan 25 21:43 : player: played "look over this/ZK0/ZK0_PinkTies_303072366.mp3"
+Jan 25 21:47 : player: played "V.A/07 V.A. - SAPPY - Be fruitful, and multiply.mp3"
+Jan 25 21:48 : player: played "look over this/Anicca._EmptyEyes_188228834.mp3"
+Jan 25 21:49 : player: played "Nichijou Original Soundtrack [16bit-44.1kHz FLAC] (2011)/(28) [野見祐二] 東雲研究所の楽しい喧嘩.flac"
+Jan 25 21:52 : player: played "look over this/wispx/WispX_FinalMoments(AvailableonSpotify)_192899030.mp3"
+Jan 25 21:54 : player: played "Toradora! OST Collection [FLAC]/Toradora! Best Album - Happyend/Disc 2 - Original Soundtrack Extora!/14 - Little tiger, sad dragon.flac"
+Jan 25 21:55 : player: played "5 Centimeters Per Second/03 Shousou.flac"
+Jan 25 21:58 : player: played "look over this/けーだっしゅ/Weak Point （Original Mix）.mp3"
+Jan 25 22:00 : player: played "Mahoutsukai no Yome [FLAC]/[180326] The Ancient Magus Bride OST 2/18. Cave.flac"
+Jan 25 22:05 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 22:06 : player: played "Mahoutsukai no Yome [FLAC]/[180326] The Ancient Magus Bride OST 2/02. Iruna Etelero.flac"
+Jan 25 22:12 : player: played "look over this/__update (needs metadata)/千本桜 (Senbon Zakura) -Piano ballade ver.--mtkBU3bV0tY.m4a"
+Jan 25 22:14 : player: played "look over this/Vect_Grinding_278438355.mp3"
+Jan 25 22:19 : player: played "Toradora! OST Collection [FLAC]/Toradora! OP2 Single - silky heart/05 Love Countdown (off vocal ver.).flac"
+Jan 25 22:19 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 22:20 : player: played "Nichijou Original Soundtrack [16bit-44.1kHz FLAC] (2011)/(79) [野見祐二] 機械人形ですね.flac"
+Jan 25 22:24 : player: played "look over this/__update (needs metadata)/ずっと真夜中でいいのに。『秒針を噛む』MV-GJI4Gv7NbmE.m4a"
+Jan 25 22:26 : player: played "look over this/ironami/ハピネスっ！ハピィーマジカルっ♪ (Ironami Remix).mp3"
+Jan 25 22:28 : player: played "[FLAC-tan] Yuru Camp△ Original Soundtrack ゆるキャン△ オリジナル・サウンドトラック/Disc 1/08 ゆるやかな時間.flac"
+Jan 25 22:31 : player: played "【DeeMo】 Song Collection + Game Movies/Deemo's Collection Vol. 2/Deemo 2.0 - Onoken - Fluquor.mp3"
+ALSA lib pcm_dmix.c:1099:(snd_pcm_dmix_open) unable to open slave
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.rear
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.center_lfe
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.side
+ALSA lib pcm_route.c:869:(find_matching_chmap) Found no matching channel map
+connect(2) call to /dev/shm/jack-1000/default/jack_0 failed (err=No such file or directory)
+attempt to connect to server failed
+connect(2) call to /dev/shm/jack-1000/default/jack_0 failed (err=No such file or directory)
+attempt to connect to server failed
+ALSA lib pcm_oss.c:377:(_snd_pcm_oss_open) Unknown field port
+ALSA lib pcm_oss.c:377:(_snd_pcm_oss_open) Unknown field port
+ALSA lib pcm_usb_stream.c:486:(_snd_pcm_usb_stream_open) Invalid type for card
+ALSA lib pcm_usb_stream.c:486:(_snd_pcm_usb_stream_open) Invalid type for card
+ALSA lib pcm_dmix.c:1099:(snd_pcm_dmix_open) unable to open slave
+connect(2) call to /dev/shm/jack-1000/default/jack_0 failed (err=No such file or directory)
+attempt to connect to server failed
+fluidsynth: error: Unable to open file "/usr/share/sounds/sf2/FluidR3_GM.sf2"
+fluidsynth: error: Couldn't load soundfont file
+fluidsynth: error: Failed to load SoundFont "/usr/share/sounds/sf2/FluidR3_GM.sf2"
+Jan 25 22:33 : fluidsynth: fluid_synth_sfload() failed
+Jan 25 22:33 : exception: Failed to decode Stem/bass/Outro_Bas.mid
+Jan 25 22:34 : player: played "Mahoutsukai no Yome [FLAC]/[180530] The Ancient Magus Brideː Those Awaiting a Star／OST 3/Disc 2 The Ancient Magus Bride OST 3/14. Yubisaki no Tomoshibi to Story wo.flac"
+Jan 25 22:34 : player: played "Stem/bass/Outro_Bas.mid"
+ALSA lib pcm_dmix.c:1099:(snd_pcm_dmix_open) unable to open slave
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.rear
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.center_lfe
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.side
+ALSA lib pcm_route.c:869:(find_matching_chmap) Found no matching channel map
+connect(2) call to /dev/shm/jack-1000/default/jack_0 failed (err=No such file or directory)
+attempt to connect to server failed
+connect(2) call to /dev/shm/jack-1000/default/jack_0 failed (err=No such file or directory)
+attempt to connect to server failed
+ALSA lib pcm_oss.c:377:(_snd_pcm_oss_open) Unknown field port
+ALSA lib pcm_oss.c:377:(_snd_pcm_oss_open) Unknown field port
+ALSA lib pcm_usb_stream.c:486:(_snd_pcm_usb_stream_open) Invalid type for card
+ALSA lib pcm_usb_stream.c:486:(_snd_pcm_usb_stream_open) Invalid type for card
+ALSA lib pcm_dmix.c:1099:(snd_pcm_dmix_open) unable to open slave
+connect(2) call to /dev/shm/jack-1000/default/jack_0 failed (err=No such file or directory)
+attempt to connect to server failed
+fluidsynth: error: Unable to open file "/usr/share/sounds/sf2/FluidR3_GM.sf2"
+fluidsynth: error: Couldn't load soundfont file
+fluidsynth: error: Failed to load SoundFont "/usr/share/sounds/sf2/FluidR3_GM.sf2"
+Jan 25 22:34 : fluidsynth: fluid_synth_sfload() failed
+Jan 25 22:34 : exception: Failed to decode Stem/bass/Outro_Bas.mid
+Jan 25 22:34 : player: played "Stem/bass/Outro_Bas.mid"
+Jan 25 22:34 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 22:37 : player: played "look over this/__update (needs metadata)/Nightcore   キミに贈る歌-bUxZhcpBdQI.m4a"
+Jan 25 22:41 : player: played "look over this/espidev/EspiDev_EspiDev-Dreamy_339162658.mp3"
+Jan 25 22:44 : player: played "The girl that leap across time Original Sound Track/05 Å¡Åùé¦òsê+.flac"
+Jan 25 22:47 : player: played "in the blue shirt/MARU137_Porter_Robinson_Re_Flicker/04 Flicker (in the blue shirt Remix).mp3"
+Jan 25 22:52 : player: played "look over this/aiobahn/過ぎゆく日と君へ (feat. nayuta).mp3"
+Jan 25 22:56 : player: played "look over this/snails house/UjicoSnailsHouse_Smile[EPOUTNOW]_236311454.mp3"
+Jan 25 22:58 : player: played "look over this/__league of legends/Bit Rush_ Arcade Ahri.mp3"
+Jan 25 23:01 : player: played "【DeeMo】 Song Collection + Game Movies/Rayark Selection Vol. 1/Deemo - Rainy Memory.mp3"
+Jan 25 23:06 : player: played "V.A/04 chimmoku - 揺影.mp3"
+Jan 25 23:09 : player: played "Thomas was alone/David Housden - Thomas Was Alone - Original Soundtrack (Deluxe Edition) - 01 Where Are You-.mp3"
+Jan 25 23:11 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 23:11 : player: played "look over this/__epic mountain/EpicMountain_Moons(originalmusic-kurzgesagtsciencevideos)_151412922.mp3"
+Jan 25 23:13 : player: played "mia ost/Made in Abyss OST/2-06 Crucifixion.m4a"
+Jan 25 23:20 : player: played "look over this/__epic mountain/Epic Mountain - Why Age-.flac"
+Jan 25 23:24 : player: played "Mahoutsukai no Yome [FLAC]/[171101] OP1 - Here - JUNNA/04. Here -Instrumental-.flac"
+Jan 25 23:28 : player: played "【DeeMo】 Song Collection + Game Movies/Rayark Selection Vol. 3/Deemo - KIVA - The Letter.mp3"
+Jan 25 23:32 : player: played "look over this/海狐/[Free] Petrichor.mp3"
+Jan 25 23:36 : player: played "look over this/vexento/Vexento_ToxicHearts-PieceOfMe(VexentoRemix)_304797743.mp3"
+Jan 25 23:40 : player: played "look over this/wispx/Reminisce.mp3"
+Jan 25 23:42 : player: played "Toradora! OST Collection [FLAC]/Toradora! Best Album - Happyend/Disc 2 - Original Soundtrack Extora!/05 - Kanchigai Hour Returns.flac"
+Jan 25 23:47 : player: played "look over this/__epic mountain/EpicMountain_WhatIsSomething_238643909.mp3"
+Jan 25 23:50 : player: played "V.A/01 アンテナガール - Highlight.mp3"
+Jan 25 23:55 : player: played "Toradora! OST Collection [FLAC]/Toradora! ED Single - Vanilla Salt/02 I my me.flac"
+Jan 25 23:56 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 25 23:56 : player: played "【DeeMo】 Song Collection + Game Movies/Eshen Chen Collection Vol. 1 ; Transmission/Deemo - Eshen Chen - Falling Ears.mp3"
+Jan 26 00:00 : player: played "look over this/__update (needs metadata)/【多素材_ 治愈MAD】屬於我們的故事-aypmqatnnV4.m4a"
+Jan 26 00:03 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 26 00:03 : player: played "look over this/[BOFU2017] 降臨 -The Apocalypse-.mp3"
+Jan 26 00:07 : player: played "in the blue shirt/DZZ - Welcome Back EP/DZZ - Welcome Back EP - 01 Fugue.m4a"
+Jan 26 00:11 : player: played "look over this/___look over/Special Rapid Service.mp3"
+Jan 26 00:13 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 26 00:13 : player: played "look over this/nakano4/nakano4_bottle_82042895.mp3"
+Jan 26 00:18 : player: played "look over this/__update (needs metadata)/Clannad OST ~ Shining in the Sky-J2yzMhNkgsk.m4a"
+Jan 26 00:21 : player: played "Shoujo Shuumatsu Ryokou/[Sheldonsuckz] Kenichiro Suehiro - Shoujo Shuumatsu Ryokou Original Soundtrack [FLAC]/Disc 2/04 Soushitsu.flac"
+Jan 26 00:24 : player: played "look over this/___look over/Moe JAZZ Dreamer BOSSA NOVA Ver.mp3"
+Jan 26 00:29 : player: played "ALL K-391 SONGS.zip/All Singles/K-391 - Beast Coast 2014.mp3"
+Jan 26 00:32 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 26 00:33 : player: played "V.A/02 V.A. - siroPd - repeat every day.mp3"
+Jan 26 00:35 : player: played "look over this/in the blue shirt/Boyish - S.S.L (In The Blue Shirt Remix)-UTg1mgmrzZs.m4a"
+Jan 26 00:35 : exception: Failed to play on "my pulseaudio" (pulse): disconnected
+Jan 26 11:11 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 26 11:11 : config: option 'mixer_control' on line 214 was not recognized
+Jan 26 11:11 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 26 11:11 : avahi: Service 'Music Player @ Someone-PC' successfully established.
+Jan 26 11:11 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 26 11:11 : client: [0] opened from 127.0.0.1:44744
+Jan 26 11:12 : player: played "look over this/in the blue shirt/Boyish - S.S.L (In The Blue Shirt Remix)-UTg1mgmrzZs.m4a"
+Jan 26 11:15 : player: played "Shoujo Shuumatsu Ryokou/[Sheldonsuckz] Kenichiro Suehiro - Shoujo Shuumatsu Ryokou Original Soundtrack [FLAC]/Disc 2/07 Ikinokori.flac"
+Jan 26 11:19 : client: [1] opened from 127.0.0.1:44810
+Jan 26 11:20 : player: played "look over this/elliot hsu/Magnified_ElliotHsu-SugarOrchard[BUYFREEDOWNLOAD]_322748119.mp3"
+Jan 26 11:25 : player: played "[161012]Mili 2nd Album「Miracle Milk」[320K+BK(JPG)]/Sl0t.mp3"
+Jan 26 11:27 : player: played "Mahoutsukai no Yome [FLAC]/[180530] The Ancient Magus Brideː Those Awaiting a Star／OST 3/Disc 2 The Ancient Magus Bride OST 3/20. Shadow.flac"
+Jan 26 11:30 : player: played "look over this/F-777_Hydra_305072327.mp3"
+Jan 26 11:33 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 26 11:33 : player: played "look over this/【iM@SHUP】dear,AKIBA【dear... × Akiba】.mp3"
+Jan 26 11:37 : player: played "look over this/__update (needs metadata)/Odore Orchestra「踊れオーケストラ」歌ってみた【＊なみりん】-Pl5aoiYB_to.m4a"
+Jan 26 11:38 : player: played "Toradora! OST Collection [FLAC]/Toradora! Original Soundtrack/03 Morning Glory.flac"
+Jan 26 11:42 : player: played "Mahoutsukai no Yome [FLAC]/[171220] The Ancient Magus Bride OST/29. Symphonic Poem ''The Ancient Magus’s Bride''.flac"
+Jan 26 11:43 : player: played "Nichijou Original Soundtrack [16bit-44.1kHz FLAC] (2011)/(80) [野見祐二] ひどい誤解から来るショッキング.flac"
+Jan 26 11:47 : player: played "ALL K-391 SONGS.zip/Sunshine (album)/K-391 - Don't Stop.wav"
+Jan 26 11:50 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 26 11:50 : player: played "mia ost/[LCE] Deep in Abyss [FLAC]/4. 白笛の呼び声 - White Whistle's Call (Instrumental).flac"
+Jan 26 11:58 : player: played "look over this/__update (needs metadata)/〔れをる〕　アストロノーツ　〔歌ってみた〕-B776HM2cZWM.m4a"
+ALSA lib pcm_dmix.c:1099:(snd_pcm_dmix_open) unable to open slave
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.rear
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.center_lfe
+ALSA lib pcm.c:2565:(snd_pcm_open_noupdate) Unknown PCM cards.pcm.side
+ALSA lib pcm_route.c:869:(find_matching_chmap) Found no matching channel map
+connect(2) call to /dev/shm/jack-1000/default/jack_0 failed (err=No such file or directory)
+attempt to connect to server failed
+connect(2) call to /dev/shm/jack-1000/default/jack_0 failed (err=No such file or directory)
+attempt to connect to server failed
+ALSA lib pcm_oss.c:377:(_snd_pcm_oss_open) Unknown field port
+ALSA lib pcm_oss.c:377:(_snd_pcm_oss_open) Unknown field port
+ALSA lib pcm_usb_stream.c:486:(_snd_pcm_usb_stream_open) Invalid type for card
+ALSA lib pcm_usb_stream.c:486:(_snd_pcm_usb_stream_open) Invalid type for card
+ALSA lib pcm_dmix.c:1099:(snd_pcm_dmix_open) unable to open slave
+connect(2) call to /dev/shm/jack-1000/default/jack_0 failed (err=No such file or directory)
+attempt to connect to server failed
+fluidsynth: error: Unable to open file "/usr/share/sounds/sf2/FluidR3_GM.sf2"
+fluidsynth: error: Couldn't load soundfont file
+fluidsynth: error: Failed to load SoundFont "/usr/share/sounds/sf2/FluidR3_GM.sf2"
+Jan 26 12:00 : fluidsynth: fluid_synth_sfload() failed
+Jan 26 12:00 : exception: Failed to decode Stem/others/Pluck_Intro.mid
+Jan 26 12:00 : player: played "violet evergarden/[Album] Original Soundtrack VIOLET EVERGARDEN - Automemories [FLAC 44kHz-16bit]/24. Never Coming Back.flac"
+Jan 26 12:00 : player: played "Stem/others/Pluck_Intro.mid"
+Jan 26 13:18 : player: played "violet evergarden/[Album] Original Soundtrack VIOLET EVERGARDEN - Automemories [FLAC 44kHz-16bit]/24. Never Coming Back.flac"
+Jan 26 13:21 : player: played "Snail's House - Snö/07 - [Waiting for You, Waiting for You.].flac"
+Jan 26 13:22 : player: played "Nichijou Original Soundtrack [16bit-44.1kHz FLAC] (2011)/(30) [野見祐二] 狐と狸のおマヌケな化かし合い.flac"
+Jan 26 13:28 : player: played "mia ost/[LCE] 旅の左手、最果ての右手 - Tabi no Hidarite, Saihate no Migite [FLAC]/3. Secret in my heart.flac"
+Jan 26 13:30 : player: played "Toradora! OST Collection [FLAC]/Toradora! Best Album - Happyend/Disc 2 - Original Soundtrack Extora!/10 - Orange Tart no Tsukurikata.flac"
+Jan 26 13:33 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 26 13:33 : player: played "park bird/are you lost/02 park bird - shooting a star.mp3"
+Jan 26 13:37 : player: played "look over this/__update (needs metadata)/Silent Majority-Tha5J8vEUyo.m4a"
+Jan 26 13:41 : player: played "ALL K-391 SONGS.zip/Overture (album)/Triple Rush/K-391 - Triple Rush.wav"
+Jan 26 13:47 : player: played "ALL K-391 SONGS.zip/All Singles/Jingle Bells  (K-391 Remix).mp3"
+Jan 26 13:49 : player: played "【DeeMo】 Song Collection + Game Movies/Deemo's Collection Vol. 1B/Deemo - Run Go Run.mp3"
+Jan 26 13:52 : player: played "look over this/Dobi - Tomorrow.mp3"
+Jan 26 13:54 : player: played "your name/[Maid-chan] RADWIMPS - Kimi no Na wa. (Original Soundtrack) (FLAC)/14. 消えた町.flac"
+Jan 26 13:57 : player: played "Thomas was alone/David Housden - Thomas Was Alone - Original Soundtrack (Deluxe Edition) - 13 Gravity.mp3"
+Jan 26 13:59 : player: played "your name/[Maid-chan] RADWIMPS - Kimi no Na wa. (Original Soundtrack) (FLAC)/15. 図書館.flac"
+Jan 26 14:03 : player: played "look over this/dwapb_Komopet_254871970.mp3"
+Jan 26 14:09 : player: played "V.A/01 Batsu - SUPERSTAR [Tomggg].mp3"
+Jan 26 14:10 : player: played "Mahoutsukai no Yome [FLAC]/[171220] The Ancient Magus Bride OST/15. Familiar Vol.1.flac"
+Jan 26 14:14 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 26 14:15 : player: played "look over this/__k-391/K-391_OutdoorChallenge_161158064.mp3"
+Jan 26 14:19 : player: played "look over this/__update (needs metadata)/Raujika - City of Twilight-eNnxdVICxbU.m4a"
+Jan 26 14:23 : player: played "look over this/ShutEye_EverythingFalls_329477302 (1).mp3"
+Jan 26 14:25 : player: played "[161012]Mili 2nd Album「Miracle Milk」[320K+BK(JPG)]/Red Dahlia.mp3"
+Jan 26 14:26 : player: played "your name/[Maid-chan] RADWIMPS - Kimi no Na wa. (Original Soundtrack) (FLAC)/13. 飛騨探訪.flac"
+Jan 26 14:30 : player: played "5 Centimeters Per Second/05 Kiss.flac"
+Jan 26 14:33 : player: played "ALL K-391 SONGS.zip/Overture (album)/Godzilla 2015/K-391 - Godzilla 2015 (Instrumental).wav"
+Jan 26 14:36 : player: played "look over this/__epic mountain/EpicMountain_MinuteEarth_206069752.mp3"
+Jan 26 14:39 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 26 14:39 : player: played "look over this/DarkNova_Nightcore-TheFatRatFlyAway(feat.Anjulie)_325908612.mp3"
+Jan 26 14:42 : player: played "look over this/dj okawari/DJ Okawari - Colors of life-EQz8nHNFR3Y.m4a"
+Jan 26 14:47 : player: played "ALL K-391 SONGS.zip/Overture (album)/Deep Blue/K-391 - Deep Blue.wav"
+Jan 26 14:50 : player: played "look over this/myriad/myriad_HeavyPulse-LostTime_312139175.mp3"
+Jan 26 14:54 : player: played "look over this/vexento/Vexento_NeverLettingGo_311649068.mp3"
+Jan 26 14:56 : player: played "Toradora! OST Collection [FLAC]/Toradora! Original Soundtrack/01 Startup.flac"
+Jan 26 14:58 : player: played "Toradora! OST Collection [FLAC]/Toradora! Original Soundtrack/19 Tiger VS Dragon.flac"
+Jan 26 15:03 : player: played "Toradora! OST Collection [FLAC]/Toradora! OP2 Single - silky heart/02 Love Countdown.flac"
+Jan 26 15:06 : player: played "look over this/___look over/coralmines_coralmines-Forevermo_299203998.mp3"
+Jan 26 15:07 : player: played "【DeeMo】 Song Collection + Game Movies/Deemo Movies/Deemo ac02.mp4"
+Jan 26 15:10 : player: played "look over this/Haki_Woah(wFactal)_337318672.mp3"
+Jan 26 15:14 : player: played "look over this/ryzu/Ryzu_Destiny_309441112.mp3"
+Jan 26 15:15 : player: played "look over this/fusq/fusq_Interlude_329822010.mp3"
+Jan 26 15:20 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 26 15:20 : player: played "ALL K-391 SONGS.zip/All Singles/K-391 - Crazy bass 2012.mp3"
+Jan 26 15:25 : player: played "the place we promised in our early days/18 - a time of reunion.m4a"
+Jan 26 15:27 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 26 15:28 : player: played "your name/[Maid-chan] RADWIMPS - Kimi no Na wa. (Original Soundtrack) (FLAC)/17. 御神体へ再び.flac"
+Jan 26 15:29 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 26 15:30 : player: played "look over this/dj okawari/DJ Okawari - Following The Dream-DYbA_TZ3OsU.m4a"
+Jan 26 15:32 : player: played "look over this/__made in abyss/08  To the Abyss!-r-yD-nXmVQ4.m4a"
+Jan 26 15:37 : player: played "Toradora! OST Collection [FLAC]/Toradora! OP Single - Pre-Parade/03 Pre-Parade (off vocal ver.).flac"
+Jan 26 15:39 : player: played "Mahoutsukai no Yome [FLAC]/[180530] The Ancient Magus Brideː Those Awaiting a Star／OST 3/Disc 2 The Ancient Magus Bride OST 3/25. Scissors's Pulse.flac"
+Jan 26 15:42 : player: played "V.A/02 snug murk + affable noise - temp.mp3"
+Jan 26 15:45 : player: played "your name/[FLAC] Radwimps - Your Name/Council of war.flac"
+Jan 26 15:47 : player: played "【DeeMo】 Song Collection + Game Movies/Deemo's Collection Vol. 1B/Deemo - M2U - Magnolia.mp3"
+Jan 26 15:49 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 26 15:49 : player: played "Nichijou Original Soundtrack [16bit-44.1kHz FLAC] (2011)/(29) [野見祐二] パニックでトラブルでオーマイガー.flac"
+Jan 26 15:51 : player: played "look over this/__update (needs metadata)/M2U - Sandglass [ Korean , English lyrics ]-aiXlIscylz0.m4a"
+Jan 26 15:55 : player: played "look over this/Destiny.mp3"
+Jan 26 15:58 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 26 15:58 : player: played "Mahoutsukai no Yome [FLAC]/[180326] The Ancient Magus Bride OST 2/11. Kokoro Utsuro.flac"
+Jan 26 16:00 : player: played "mia ost/Made in Abyss OST/2-17 Reg's Power.m4a"
+Jan 26 16:03 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 26 16:03 : player: played "look over this/nezumi/Sweetie.mp3"
+Jan 26 16:06 : player: played "the place we promised in our early days/22 - Takuya`s Determination.m4a"
+Jan 26 16:10 : player: played "look over this/Omoide.mp3"
+Jan 26 16:13 : player: played "look over this/snails house/Journey _w In Love With a Ghost.mp3"
+Jan 26 16:15 : player: played "Nichijou Original Soundtrack [16bit-44.1kHz FLAC] (2011)/(88) [野見祐二] 教頭のテーマ.flac"
+Jan 26 16:19 : player: played "look over this/alwone/Alwone_Alwone-Silence_312020995.mp3"
+Jan 26 16:21 : player: played "look over this/[#BOFU2017]tokiwa - Morion.mp3"
+Jan 26 16:23 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 26 16:24 : player: played "【DeeMo】 Song Collection + Game Movies/Deemo's Collection Vol. 1A/Deemo - Utopiosphere.mp3"
+Jan 26 16:28 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 26 16:28 : player: played "look over this/__update (needs metadata)/여학생이라도 사랑하고 싶어 Korean Cover【WWPW_잠뜰&쵸쵸우】クノイチでも恋がしたい-Ku8rQKg0S5w.m4a"
+Jan 26 16:32 : player: played "look over this/__update (needs metadata)/お気に召すまま - Eve MV-nROvY9uiYYk.m4a"
+Jan 26 16:37 : player: played "look over this/snails house/UjicoSnailsHouse_Princess(DreamPrincess)feat._291745159.mp3"
+Jan 26 16:40 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jan 26 16:40 : player: played "Shoujo Shuumatsu Ryokou/[Sheldonsuckz] Kenichiro Suehiro - Shoujo Shuumatsu Ryokou Original Soundtrack [FLAC]/Disc 2/06 Hitomi ni Utsuru Keshiki.flac"
+Jan 26 16:45 : player: played "look over this/dj okawari/DJ Okawari -Free Bird feat.SIERRA-n5Wv504Pa3Q.m4a"
+Jan 26 16:49 : player: played "V.A/05 あんどりいらんど。 - feel me feel you.mp3"
+Jan 28 17:32 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 28 17:32 : config: option 'mixer_control' on line 214 was not recognized
+Jan 28 17:32 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Jan 28 17:32 : avahi: Service 'Music Player @ Someone-PC' successfully established.
+Jan 28 17:32 : client: [0] opened from 127.0.0.1:50164

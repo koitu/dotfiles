@@ -1,0 +1,14 @@
+# /dev/nvme0n1p4
+UUID=b99e04e5-5fa6-4cff-bc47-02916853aee9	/         	ext4      	rw,noatime	0 0
+
+# /dev/nvme0n1p6
+UUID=de029ae1-4726-450d-8316-91fa0079a7e2	/home     	ext4      	rw,noatime	0 0
+
+# /dev/nvme0n1p7
+UUID=F93E-B6AA	      				/boot/efi 	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,utf8,errors=remount-ro	0 0
+
+# /dev/nvme0n1p5
+UUID=3e38d764-c8d6-478d-8542-f41c9697cbf6	none      	swap      	defaults,pri=-2	0 0
+
+#storage mount
+UUID=E47C0F0D7C0EDA66 				/home/someone/Storage 	ntfs-3g		auto,user,rw	0 0
