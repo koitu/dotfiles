@@ -1,3 +1,14 @@
+# workspace screens
+#workspace 1 output HDMI1
+#workspace 2 output HDMI1
+#workspace 3 output HDMI1
+#workspace 4 output HDMI1
+#workspace 5 output LVDS1
+#workspace 6 output LVDS1
+#workspace 7 output LVDS1
+#workspace 8 output LVDS1
+
+
 # i3 config file (v4)
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
@@ -42,7 +53,7 @@ bindsym $mod+Return exec termite
 #bindsym $mod+d exec --no-startup-id ulauncher
 
 # rofi
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -i -dmenu -font "IBM Plex Sans Medium 15" '
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -i -dmenu' #-font"IBM Plex Sans Medium 14" '
 # Screenshot (now provided by Plasma)
 # bindsym Print exec --no-startup-id spectacle
 
@@ -190,8 +201,8 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
 #navigate workspaces next / previous
-bindsym $mod+Ctrl+Right workspace next
-bindsym $mod+Ctrl+Left workspace prev
+bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev
 
 # Workspace names
 # to display names or symbols instead of plain workspace numbers you can use
@@ -316,10 +327,11 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 5 px or 5 ppt
-        bindsym k resize grow height 5 px or 5 ppt
-        bindsym l resize shrink height 5 px or 5 ppt
-        bindsym semicolon resize grow width 5 px or 5 ppt
+	#the orginal was 5px
+        bindsym j resize shrink width 10 px or 10 ppt
+        bindsym k resize grow height 10 px or 10 ppt
+        bindsym l resize shrink height 10 px or 10 ppt
+        bindsym semicolon resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
@@ -340,7 +352,7 @@ bindsym $mod+9 exec --no-startup-id blurlock
 #exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore; sleep 1; compton -b
 #exec --no-startup-id manjaro-hello
-#exec --no-startup-id nm-applet
+exec --no-startup-id nm-applet
 #exec --no-startup-id xfce4-power-manager
 #exec --no-startup-id pamac-tray
 #exec --no-startup-id clipit
@@ -358,7 +370,7 @@ exec --no-startup-id mpd
 #exec --no-startup-id compton
 
 #set background
-exec --no-startup-id feh --bg-fill ~/Pictures/background.jpg
+exec --no-startup-id feh --bg-fill Storage/Pictures/fuzzy_wall.jpg
 
 
 # Color palette used for the terminal ( ~/.Xresources file )
