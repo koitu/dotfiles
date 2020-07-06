@@ -1,0 +1,86 @@
+! config notes
+! * and . are almost the same for stuff like fonts
+! but * can be used to represent all components that could have been put there
+! URxvt.keysym.Shift-up -> URxvt*Shift-up will set the Shift-up for all of the URxvt class
+!
+! Meta or M key is alt
+!
+! to disable a built-in keybind rebind to builtin-string:
+
+! █▓▒░ color scheme
+#include </home/koitu/.config/colors/mycolors.Xcolors>
+
+! █▓▒░ extensions
+URxvt.perl-ext:default,matcher,vtwheel
+URxvt.keysym.Control-v: eval:paste_clipboard
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt.keysym.Control-Meta-v: builtin-string: 
+URxvt.keysym.Control-Meta-c: builtin-string:
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+URxvt.keysym.Control-Shift-O: perl:matcher:last
+! underline links with <underline bold color>
+URxvt.matcher.rend.0: Uline Bold fg5
+
+! █▓▒░ fonts
+URxvt*font: xft:Firacode Nerd Font:size=11:antialias=true
+!   !URxvt*font: xft:GohuFont:size=8:antialias=true, \
+!   !URxvt*font: xft:gohufont:size=11:antialias=false
+!   !URxvt*font: -*-creep-regular-*-*--16-*-*-*-*-*-*-1
+!   !URxvt*font: -*-lime-*-*-*--11-*-*-*-*-*-*-1
+!   !URxvt*font: xft:creep:size=16:antialias=true
+!   !URxvt*font: xft:envy code r:size=9:antialias=false
+!   !URxvt*font: xft:lemon:size=16:antialias=false
+!   !URxvt*font: xft:lime:size=16:antialias=false
+!   !URxvt*font: xft:neep:size=11:antialias=false
+!   !URxvt*font: xft:perfect dos vga 437:size=11:antialias=false
+!   !URxvt*font: xft:tewi:size=11:antialias=false
+!   URxvt*font: xft:Hack Nerd Font Mono:style=Regular:size=11:hinting=full, \
+!               xft:Symbola:size=11:antialias=true:hinting=full
+   
+URxvt*boldFont: 
+URxvt*italicFont: 
+URxvt*bolditalicFont: 
+   
+URxvt*letterSpace: -1
+URxvt*lineSpace: -1
+ 
+! basic
+! do not scroll with output
+URxvt*scrollTtyOutput: false
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: true
+! Disable printing the terminal contents when pressing PrintScreen.
+URxvt.print-pipe: "cat > /dev/null"
+! disable scrollback buffer for 2nd screen (less and stuffs)
+URxvt.secondaryScreen: 1
+URxvt.secondaryScroll: 0
+
+! window
+URxvt*scrollBar: false
+URxvt*transparent: false
+URxvt*internalBorder: 10
+URxvt*borderColor: #3B4252
+URxvt*borderLess:false
+  
+! other
+URxvt.saveLines: 9999
+URxvt.iso14755: false
+!   !URxvt*altSendsEscape: true
+!   
+!   ! █▓▒░ high dpi mode
+!   Xft.dpi: 190
+!   Xft.autohint: 0
+!   Xft.lcdfilter: lcddefault
+!   Xft.hintstyle: hintfull
+!   Xft.hinting: 1
+!   Xft.antialias: 1
+!   Xft.rgba: rgb
+!
+
+  
+   
+!   twobwm.enable_compton: true

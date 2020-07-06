@@ -5,8 +5,8 @@
 #clickable_url = true
 #dynamic_title = true
 #font = inconsolata 11
-#font = FiraCode Nerd Font 9
-font = Firacode 9
+font = FiraCode Nerd Font 11
+#font = Firacode 11
 #fullscreen = true
 #icon_name = terminal
 
