@@ -19,6 +19,6 @@ endif
 call plug#begin('~/.vim/vim-plug')
 
 " style
-Plug 'chrisbra/colorizer'
+Plug 'lilydjwg/colorizer'
 
 call plug#end()

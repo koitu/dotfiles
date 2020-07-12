@@ -1,3 +1,10 @@
+# assign workspace to monitors
+workspace $ws1 output DP-1.1.1 eDP-1-1
+workspace $ws2 output DP-1.1.1 eDP-1-1
+workspace $ws3 output DP-1.1.8 eDP-1-1
+workspace $ws4 output DP-1.1.8 eDP-1-1
+workspace $ws5 output eDP-1-1
+workspace $ws6 output eDP-1-1
 
 
 # mod key (Mod1=<Alt> Mod4=<Super>)
@@ -121,7 +128,7 @@ floating_modifier $mod
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 # toggle split toggles split orientation
-bindsym $mod+e layout toggle split
+#bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -158,7 +165,10 @@ hide_edge_borders smart
 ##########################
 
 # focus on the container mouse is hovering over
-focus_follows_mouse yes
+focus_follows_mouse no
+
+# mouse follows focus
+mouse_warping output
 
 # switch to workspace with urgent windows automatically
 for_window [urgent=latest] focus
@@ -195,8 +205,6 @@ bindsym $mod+Shift+6 move container to workspace number $ws6
 bindsym $mod+Shift+7 move container to workspace number $ws7
 bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
-
-
 
 
 
@@ -298,8 +306,7 @@ exec --no-startup-id dunst
 exec --no-startup-id numlockx on # start up num lock on
 #  exec --no-startup-id polybar top
 #  exec --no-startup-id mpd
-# -b is daemonize -c is shadows -f is fadout on close
-exec_always --no-startup-id picom -b -c -f
+exec_always --no-startup-id picom -b
 #  exec --no-startup-id i3-msg 'workspace $ws8; exec termite -e ncmpcpp'
 #  exec --no-startup-id i3-msg 'workspace $ws5; exec discord'
 #  exec --no-startup-id redshift
