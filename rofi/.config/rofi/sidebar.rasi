@@ -1,0 +1,61 @@
+//padding y x can be done separately (e.x. padding: 2px 10px)
+* {
+	//default colors for everything
+	background-color:	#080808;
+	text-color:		#d3d7cf;
+	selection-color:	#7086b2;
+
+	separator-style:             "none";
+	hide-scrollbar:              "true";
+}
+
+window {
+//	uncomment to enable sidebar mode
+//	location:	east;
+//	anchor:		east;
+//	height:		100%;
+//	width:		25%;
+	height: 	50%;
+	width:		50%;
+	//space between outside and the border
+	padding: 	8;
+	orientation: 	horizontal;
+	children:	[border];
+}
+
+border {
+	//size of border
+	padding: 2;
+	background-color: @selection-color;
+	children: 	[mainbox];
+}
+
+mainbox {
+	//space between entry box and list
+	//spacing:  -1 em;
+	//space between entry box + list and border
+	padding: 0px;	
+	children: [ entry,listview ];
+}
+
+entry {
+	expand:         false;
+	text-color:     @text;
+	vertical-align: 1;
+	padding:        15px	2em;
+}
+
+listview {
+	//space between each item on list
+	//spacing: 0.5em;
+	dynamic: false;
+	cycle:   true;
+	padding: 0px;
+}
+
+element { padding: 8px 2em; }
+
+element selected {
+	background-color: @selection-color;
+	text-color:       @background-color;
+}
