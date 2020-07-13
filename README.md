@@ -31,6 +31,10 @@ This dotfiles are managed by using <a href="https://www.gnu.org/software/stow/">
 
 ---
 
+**Important:** stow cannot create a symlink if the config files already exist. Be sure to delete the default configs before attempting install.
+
+---
+
 Stow will by default create symlinks to the parent of your current directory.
 
 These commands should be excuted in `~/dotfiles` and assume you have cloned this repo to that location.
@@ -66,11 +70,6 @@ To uninstall use the `-D` argument
 ```
 stow -D i3
 ```
-
----
-
-**Important:** stow cannot create a symlink if the config files already exist. Be sure to delete the default configs before attempting install.
-
 ## Screenshots
 
 Coming soon
