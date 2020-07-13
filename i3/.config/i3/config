@@ -65,7 +65,7 @@ bindsym $mod+Shift+q kill
 
 # launch dmenu with rofi theme and dmenu options?
 #bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu='rofi -i -dmenu'
-bindsym $mod+d exec --no-startup-id rofi -show drun
+bindsym $mod+d exec --no-startup-id rofi -show
 bindsym $mod+Shift+d exec --no-startup-id networkmanager_dmenu
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that installed.

@@ -4,24 +4,25 @@
 configuration {
 	theme: "theme";//located in ~/.config/rofi/theme.rasi
 	modi: "drun";
+//	combi-modi: "drun,run";
+//	modi: "combi";
 	font: "Firacode Nerd Font Mono 11";
-	drun-display-format: "{name}";
 	show-icons: false;
 /*	icon-theme: ;*/
 	sort: true;
 	sorting-method: "fzf";
 	case-sensitive: false;
 	cycle: true;
+	drun-display-format: "{name}";
 /*	drun-show-actions: false;*/
-/*	drun-match-fields: "name,generic,exec,categories";*/
+	drun-match-fields: "name,generic,exec,categories";
 /*	display-window: ;*/
 /*	display-windowcd: ;*/
 /*	display-run: ;*/
 /*	display-ssh: ;*/
-/*	display-drun: ;*/
+	display-drun: "";
 /*	display-combi: ;*/
 /*	display-keys: ;*/
-//show modi you are in
 /*	sidebar-mode: false;*/
 /*	ignored-prefixes: "";*/
 /*	disable-history: false;*/
