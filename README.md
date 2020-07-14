@@ -27,6 +27,11 @@ The "other" folder contains configs speccific for my setup (x1 Extreme gen 1 wit
 - ranger theme
 - fix "other" folder
 - writeup for each program with packages required
+- brightness adjustment
+- vertical monitor swapping
+- screenshot method
+- power managment
+- shutdown/restart/etc
 - screenshots
 
 ## Installation
@@ -80,6 +85,8 @@ Coming soon
 
 ## My Laptop
 
+**note:** avoid using symlinks for /etc configs
+
 ### Mouse Settings
 
 **note:** symlinks might not work you might have to manually move it
@@ -93,7 +100,7 @@ Restart laptop
 
 ### Multihead and Nvidia
 
-**note:** config goes to two different locations (/etc/ and ~/.config/)
+https://github.com/phillipberndt/autorandr
 ```
 sudo pacman -S optimus-manager autorandr
 sudo systemctl enable optimus-manager autorandr

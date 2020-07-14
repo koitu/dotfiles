@@ -6,7 +6,6 @@ workspace $ws4 output DP-1.1.8 eDP-1-1
 workspace $ws5 output eDP-1-1
 workspace $ws6 output eDP-1-1
 
-
 # mod key (Mod1=<Alt> Mod4=<Super>)
 set $mod Mod1
 
@@ -14,13 +13,8 @@ set $mod Mod1
 #font pango:monospace 8
 
 #font pango:Noto Mono 10
-#font pango:FiraCode 9
 font pango:Firacode Nerd Font Mono 11 
 #font pango:Helvetica Neue, FontAwesome 11
-
-# This font is widely installed, provides lots of unicode glyphs, right-to-left
-# text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 8
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left text rendering and scalability on retina/hidpi displays (thanks to pango).
 # font pango:DejaVu Sans Mono 8
@@ -42,13 +36,10 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym XF86MonBrightnessUp exec --no-startup-id "xbacklight -inc 10"
 bindsym XF86MonBrightnessDown exec --no-startup-id "xbacklight -dec 10"
 
-# mpd controls 
+# mpd controls (maybe replace with playerctl)
 #bindsym XF86AudioNext exec --no-startup-id mpc next
 #bindsym XF86AudioPrev exec --no-startup-id mpc prev
 #bindsym XF86AudioPlay exec --no-startup-id mpc toggle
-
-
-
 
 
 
@@ -76,9 +67,6 @@ bindsym $mod+Shift+d exec --no-startup-id networkmanager_dmenu
 
 #  #launch categorized menu
 #  bindsym $mod+z exec --no-startup_id morc_menu
-
-
-
 
 
 
@@ -138,7 +126,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-#bindsym $mod+a focus parent
+bindsym $mod+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -157,7 +145,6 @@ hide_edge_borders smart
 #bindsym $mod+u border none
 #bindsym $mod+y border pixel 2
 #bindsym $mod+n border normal
-
 
 
 
@@ -209,8 +196,6 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 
 
 
-
-
 #######################
 ### system controls ###
 #######################
@@ -219,8 +204,6 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
-
-
 
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
@@ -285,44 +268,33 @@ bar {
 
 
 
-
-
 ##########################
 ### autostart programs ###
 ##########################
-
-# The combination of xss-lock, nm-applet and pactl is a popular choice, so
-# they are included here as an example. Modify as you see fit.
+#
+# The combination of xss-lock, nm-applet and pactl is a popular choice, so they are included here as an example. Modify as you see fit.
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
 # exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
+# NetworkManager tray GUI
+# exec --no-startup-id nm-applet
 
-
-# NetworkManager is the most popular way to manage wireless networks on Linux, and nm-applet is a desktop environment-independent system tray GUI for it.
-#  exec --no-startup-id nm-applet
-# 
 exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
 exec --no-startup-id dunst
 exec --no-startup-id numlockx on # start up num lock on
-#  exec --no-startup-id polybar top
-#  exec --no-startup-id mpd
+exec --no-startup-id feh --bg-fill ~/.config/i3/fuzzy_wall.jpg
 exec_always --no-startup-id picom -b
+#  exec --no-startup-id polybar top
 #  exec --no-startup-id i3-msg 'workspace $ws8; exec termite -e ncmpcpp'
-#  exec --no-startup-id i3-msg 'workspace $ws5; exec discord'
-#  exec --no-startup-id redshift
-#  
+exec --no-startup-id i3-msg 'workspace $ws5; exec discord'
+
 #  #start authentication agent
 #  exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-#  
-#  #set background
-#  exec --no-startup-id feh --bg-fill i/home/koitu/Storage/Pictures/fuzzy_wall.jpg
 
 #  bindsym Print exec scrot -z -m -q 100 
 #  bindsym Ctrl+Print exec scrot -z -s -m -f -q 100
-
-
 
 
 
@@ -360,8 +332,6 @@ exec_always --no-startup-id picom -b
 #  set_from_resource $term_color13    color13
 #  set_from_resource $term_color14    color14
 #  set_from_resource $term_color15    color15
-
-
 
 
 
@@ -415,8 +385,6 @@ exec_always --no-startup-id picom -b
 #  # Try to kill the wallpaper set by Plasma (it takes up the entire workspace and hides everythiing)
 #  #exec --no-startup-id wmctrl -c Plasma
 #  #for_window [title="Desktop — Plasma"] kill, floating enable, border none
-
-
 
 
 
