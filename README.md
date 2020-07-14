@@ -8,9 +8,11 @@ The "other" folder contains configs speccific for my setup (x1 Extreme gen 1 wit
 - [Todo](#Todo)
 - [Installation](#Installation)
 - [Screenshots](#Screenshots)
+- [My Laptop](#My Laptop)
 
 ## Todo
 - i3
+- rofi plugins
 - zathura
 - polybar
 - wallpaper
@@ -18,9 +20,11 @@ The "other" folder contains configs speccific for my setup (x1 Extreme gen 1 wit
 - colors
 - mpd
 - ncmpcpp
+- dunst
 - try zsh
 - gtk + qt theme
 - gestures
+- ranger theme
 - fix "other" folder
 - writeup for each program with packages required
 - screenshots
@@ -39,7 +43,7 @@ Stow will by default create symlinks to the parent of your current directory.
 
 These commands should be excuted in `~/dotfiles` and assume you have cloned this repo to that location.
 
-Another option is to use `-d` with the repo location
+Another option is to use `-d` with the repo location.
 
 To install my i3 config simply execute:
 
@@ -51,7 +55,7 @@ This will symlink the files to `~/.config/i3`
 
 ---
 
-When installing elsewhere use `-t` to specify the location
+When installing elsewhere use `-t` to specify the location.
 
 To install systemwide configs (/etc configs):
 
@@ -65,7 +69,7 @@ To install for root user:
 sudo stow termite -t /root
 ```
 
-To uninstall use the `-D` argument
+To uninstall use the `-D` argument:
 
 ```
 stow -D i3
@@ -73,3 +77,50 @@ stow -D i3
 ## Screenshots
 
 Coming soon
+
+## My Laptop
+
+### Mouse Settings
+
+**note:** symlinks might not work you might have to manually move it
+```
+sudo pacman -S logid
+sudo systemctl enable logid
+```
+Restart laptop
+
+---
+
+### Multihead and Nvidia
+
+**note:** config goes to two different locations (/etc/ and ~/.config/)
+```
+sudo pacman -S optimus-manager autorandr
+sudo systemctl enable optimus-manager autorandr
+```
+Restart laptop
+
+---
+
+To reconfigure docked mode:
+```
+autorandr --remove docked
+autorandr --save docked
+```
+
+### Redshift
+
+set up geoclue or change redshift config 
+
+**note:** config goes to two different locations (/etc/ and ~/.config/)
+```
+sudo pacman -S redshift
+systemctl --user enable redshift
+```
+Restart laptop
+
+### Zathura
+
+```
+sudo pacman -S zathura zathura-cb zathura-djvu zathura-pdf-mupdf zathura-ps
+```
