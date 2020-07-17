@@ -75,28 +75,28 @@ bindsym $mod+Shift+d exec --no-startup-id networkmanager_dmenu
 ###########################
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+bindsym $mod+j focus left; exec "~/.config/i3/mouse_warp.sh"
+bindsym $mod+k focus down; exec "~/.config/i3/mouse_warp.sh"
+bindsym $mod+l focus up; exec "~/.config/i3/mouse_warp.sh"
+bindsym $mod+semicolon focus right; exec "~/.config/i3/mouse_warp.sh"
 
 # change focus with cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+bindsym $mod+Left focus left; exec "~/.config/i3/mouse_warp.sh"
+bindsym $mod+Down focus down; exec "~/.config/i3/mouse_warp.sh"
+bindsym $mod+Up focus up; exec "~/.config/i3/mouse_warp.sh"
+bindsym $mod+Right focus right; exec "~/.config/i3/mouse_warp.sh"
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+bindsym $mod+Shift+j move left; exec "~/.config/i3/mouse_warp.sh"
+bindsym $mod+Shift+k move down; exec "~/.config/i3/mouse_warp.sh"
+bindsym $mod+Shift+l move up; exec "~/.config/i3/mouse_warp.sh"
+bindsym $mod+Shift+semicolon move right; exec "~/.config/i3/mouse_warp.sh"
 
 # move focused window with cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+bindsym $mod+Shift+Left move left; exec "~/.config/i3/mouse_warp.sh"
+bindsym $mod+Shift+Down move down; exec "~/.config/i3/mouse_warp.sh"
+bindsym $mod+Shift+Up move up; exec "~/.config/i3/mouse_warp.sh"
+bindsym $mod+Shift+Right move right; exec "~/.config/i3/mouse_warp.sh"
 
 # move workspace between screens
 bindsym $mod+Ctrl+semicolon move workspace to output right
@@ -158,8 +158,8 @@ focus_wrapping no
 # focus on the container mouse is hovering over
 focus_follows_mouse no
 
-# mouse follows focus
-mouse_warping output
+# mouse follows focus <none|output>
+mouse_warping none
 
 # switch to workspace with urgent windows automatically
 for_window [urgent=latest] focus

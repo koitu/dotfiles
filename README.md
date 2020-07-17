@@ -83,6 +83,10 @@ stow -D i3
 
 Coming soon
 
+## i3
+install xdotool
+
+
 ## My Laptop
 
 **note:** avoid using symlinks for /etc configs

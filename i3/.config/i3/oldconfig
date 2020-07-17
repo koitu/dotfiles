@@ -1,13 +1,14 @@
 # workspace screens
-#workspace 1 output HDMI1
-#workspace 2 output HDMI1
-#workspace 3 output HDMI1
-#workspace 4 output HDMI1
-#workspace 5 output LVDS1
-#workspace 6 output LVDS1
-#workspace 7 output LVDS1
-#workspace 8 output LVDS1
+workspace $ws1 output HDMI-0 eDP-1-1
+workspace $ws2 output HDMI-0 eDP-1-1
+workspace $ws3 output HDMI-0 eDP-1-1
+workspace $ws4 output HDMI-0 eDP-1-1
+workspace $ws5 output HDMI-0 eDP-1-1
+workspace $ws6 output eDP-1-1 HDMI-0
+workspace $ws7 output eDP-1-1 HDMI-0
+workspace $ws8 output HDMI-0 eDP-1-1
 
+bindsym 0xffc6 exec /usr/local/bin/thing.sh 
 
 # i3 config file (v4)
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
@@ -47,13 +48,10 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec termite
-#bindsym $mod+Return exec konsole
-
-# ulauncher
-#bindsym $mod+d exec --no-startup-id ulauncher
 
 # rofi
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -i -dmenu' #-font"IBM Plex Sans Medium 14" '
+bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu='rofi -i -dmenu' #-font"IBM Plex Sans Medium 14" '
+bindsym $mod+s exec --no-startup-id networkmanager_dmenu
 # Screenshot (now provided by Plasma)
 # bindsym Print exec --no-startup-id spectacle
 
@@ -98,14 +96,14 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 ################################################################################################
 
 # Screen brightness controls
-bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
-bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
+bindsym XF86MonBrightnessUp exec --no-startup-id "xbacklight -inc 10"
+bindsym XF86MonBrightnessDown exec --no-startup-id "xbacklight -dec 10"
 
 # Start Applications
 #bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 #bindsym $mod+F2 exec palemoon
 #bindsym $mod+F3 exec pcmanfm
-# bindsym $mod+F3 exec ranger
+#bindsym $mod+F3 exec ranger
 #bindsym $mod+Shift+F3 exec zensu pcmanfm
 #bindsym $mod+F5 exec terminal -e 'mocp'
 #bindsym $mod+t exec --no-startup-id pkill compton
@@ -177,7 +175,7 @@ bindsym $mod+q split toggle
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
+#bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
@@ -294,11 +292,12 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 for_window [urgent=latest] focus
 
 # reload the configuration file
-bindsym $mod+Shift+c reload
+#bindsym $mod+Shift+r reload
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
+#bindsym $mod+Shift+Ctrl+r restart
 
+# this is useless on arch as these were scipts in manjaro
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
@@ -349,10 +348,10 @@ mode "resize" {
 bindsym $mod+9 exec --no-startup-id blurlock
 
 # Autostart applications
-#exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id nitrogen --restore; sleep 1; compton -b
-#exec --no-startup-id manjaro-hello
 exec --no-startup-id nm-applet
+#exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+#exec --no-startup-id nitrogen --restore; sleep 1; compton -b
+#exec --no-startup-id manjaro-hello
 #exec --no-startup-id xfce4-power-manager
 #exec --no-startup-id pamac-tray
 #exec --no-startup-id clipit
@@ -365,14 +364,35 @@ exec --no-startup-id nm-applet
 #exec_always --no-startup-id fix_xcursor
 #exec --no-startup-id ulauncher
 
+exec --no-startup-id dunst
 exec --no-startup-id polybar top
 exec --no-startup-id mpd
-#exec --no-startup-id compton
-
+exec_always --no-startup-id picom -b -c -f
+exec --no-startup-id i3-msg 'workspace $ws8; exec termite -e ncmpcpp'
+exec --no-startup-id i3-msg 'workspace $ws5; exec discord'
+exec --no-startup-id redshift
+#start authentication agent
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 #set background
 exec --no-startup-id feh --bg-fill Storage/Pictures/fuzzy_wall.jpg
+#disable mouse acceleration (also works without xorg)
+#note you can chnage the Default values too
+exec --no-startup-id xinput --set-prop 13 "libinput Accel Profile Enabled" 0, 1 #set mouse accel to 0
+exec --no-startup-id xinput --set-prop 13 "libinput Accel Speed" 1 #set speed to max
+exec --no-startup-id xinput --set-prop 14 "libinput Accel Profile Enabled" 0, 1 #set mouse accel to 0
+exec --no-startup-id xinput --set-prop 14 "libinput Accel Speed" 1 #set speed to max
+bindsym Print exec scrot -z -m -q 100 
+bindsym Ctrl+Print exec scrot -z -s -m -f -q 100
+#add ;notify-send "msg"
+#after commend for notifaction
+#bindsym $mod+"." exec mpc next; notify-send "next song"
+#bindsym $mod+, exec mpc prev; notify-send "prev song"
+#bindsym $mod+"/" exec mpc toggle; notify-send "toggle music"
+bindsym XF86AudioNext exec --no-startup-id mpc next
+bindsym XF86AudioPrev exec --no-startup-id mpc prev
+bindsym XF86AudioPlay exec --no-startup-id mpc toggle
 
-
+#TODO: create .Xreasources
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
 # https://i3wm.org/docs/userguide.html#xresources
@@ -450,8 +470,8 @@ bindsym $mod+m bar mode toggle
   client.background       #2B2C2B
 ## Plasma Integration
 # Try to kill the wallpaper set by Plasma (it takes up the entire workspace and hides everythiing)
-exec --no-startup-id wmctrl -c Plasma
-for_window [title="Desktop — Plasma"] kill, floating enable, border none
+#exec --no-startup-id wmctrl -c Plasma
+#for_window [title="Desktop — Plasma"] kill, floating enable, border none
 
 
 #############################
@@ -459,7 +479,8 @@ for_window [title="Desktop — Plasma"] kill, floating enable, border none
 #############################
 
 # Set inner/outer gaps
-gaps inner 10
+gaps inner 0
+#gaps inner 10
 gaps outer 0
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
