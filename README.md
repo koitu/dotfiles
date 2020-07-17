@@ -12,6 +12,7 @@ The "other" folder contains configs speccific for my setup (x1 Extreme gen 1 wit
 
 ## Todo
 - i3
+- vim
 - rofi plugins
 - zathura
 - polybar
@@ -84,7 +85,7 @@ stow -D i3
 Coming soon
 
 ## i3
-install xdotool
+install xdotool xbanish
 
 
 ## My Laptop

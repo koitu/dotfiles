@@ -156,7 +156,7 @@ hide_edge_borders smart
 focus_wrapping no
 
 # focus on the container mouse is hovering over
-focus_follows_mouse no
+focus_follows_mouse yes
 
 # mouse follows focus <none|output>
 mouse_warping none
@@ -292,6 +292,7 @@ exec_always --no-startup-id picom -b
 #  exec --no-startup-id polybar top
 #  exec --no-startup-id i3-msg 'workspace $ws8; exec termite -e ncmpcpp'
 exec --no-startup-id i3-msg 'workspace $ws5; exec discord'
+exec --no-startup-id xbanish
 
 #  #start authentication agent
 #  exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &

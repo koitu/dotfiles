@@ -4,6 +4,7 @@ let configs = [
 \  "commands",
 \  "plugins",
 \  "plugin-settings",
+\  "config",
 \]
 for file in configs
   let x = expand("~/.vim/".file.".vim")
@@ -11,3 +12,4 @@ for file in configs
     execute 'source' x
   endif
 endfor
+
