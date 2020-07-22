@@ -110,7 +110,7 @@ configuration {
 /*	kb-ellipsize: "Alt+period";*/
 /*	kb-toggle-case-sensitivity: "grave,dead_grave";*/
 /*	kb-toggle-sort: "Alt+grave";*/
-	kb-cancel: "Escape,Alt+Q,Alt+q,Control+bracketleft";
+	kb-cancel: "Escape,Alt+Q,Alt+q,Control+bracketleft,Alt+d";
 	ml-row-left: "ScrollLeft";
 	ml-row-right: "ScrollRight";
 	ml-row-up: "ScrollUp";
