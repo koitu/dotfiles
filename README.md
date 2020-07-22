@@ -8,6 +8,7 @@ The "other" folder contains configs speccific for my setup (x1 Extreme gen 1 wit
 - [Todo](#Todo)
 - [Installation](#Installation)
 - [Screenshots](#Screenshots)
+- [Configs](#General Configs)
 - [My Laptop](#My Laptop)
 
 ## Todo
@@ -16,24 +17,26 @@ The "other" folder contains configs speccific for my setup (x1 Extreme gen 1 wit
 - rofi plugins
 - zathura
 - polybar
-- wallpaper
 - termite
 - colors
 - mpd
 - ncmpcpp
-- dunst
 - try zsh
 - gtk + qt theme
 - gestures
-- ranger theme
-- fix "other" folder
 - writeup for each program with packages required
 - brightness adjustment
 - vertical monitor swapping
 - screenshot method
-- power managment
+- power managment (tlp/powertop)
 - shutdown/restart/etc
 - screenshots
+- syncthing
+- NetworkManager (backups? + captive portals) (installed nm-connection-editor)
+- custom dns servers + vpn (wireguard) + dns over https or dnscrypt
+- recycle bin?
+- file manager (ranger or something else)
+- lightdm
 
 ## Installation
 
@@ -84,13 +87,21 @@ stow -D i3
 
 Coming soon
 
-## i3
+## General configs
+
+### i3
 install xdotool xbanish
 
+### Zathura
+
+```
+sudo pacman -S zathura zathura-cb zathura-djvu zathura-pdf-mupdf zathura-ps
+```
 
 ## My Laptop
 
-**note:** avoid using symlinks for /etc configs
+**note: avoid using symlinks for /etc configs**
+---
 
 ### Mouse Settings
 
@@ -131,8 +142,3 @@ systemctl --user enable redshift
 ```
 Restart laptop
 
-### Zathura
-
-```
-sudo pacman -S zathura zathura-cb zathura-djvu zathura-pdf-mupdf zathura-ps
-```

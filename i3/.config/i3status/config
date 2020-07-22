@@ -59,7 +59,7 @@ memory {
 }
 
 volume master {
-        format = "♪: %volume"
+        format = "V: %volume"
         format_muted = "♪: muted (%volume)"
         device = "pulse:1"
 }

@@ -75,28 +75,28 @@ bindsym $mod+Shift+d exec --no-startup-id networkmanager_dmenu
 ###########################
 
 # change focus
-bindsym $mod+j focus left; exec "~/.config/i3/mouse_warp.sh"
-bindsym $mod+k focus down; exec "~/.config/i3/mouse_warp.sh"
-bindsym $mod+l focus up; exec "~/.config/i3/mouse_warp.sh"
-bindsym $mod+semicolon focus right; exec "~/.config/i3/mouse_warp.sh"
+bindsym $mod+j focus left; exec --no-startup-id "~/.config/i3/mouse_warp.sh"
+bindsym $mod+k focus down; exec --no-startup-id "~/.config/i3/mouse_warp.sh"
+bindsym $mod+l focus up; exec --no-startup-id "~/.config/i3/mouse_warp.sh"
+bindsym $mod+semicolon focus right; exec --no-startup-id "~/.config/i3/mouse_warp.sh"
 
 # change focus with cursor keys:
-bindsym $mod+Left focus left; exec "~/.config/i3/mouse_warp.sh"
-bindsym $mod+Down focus down; exec "~/.config/i3/mouse_warp.sh"
-bindsym $mod+Up focus up; exec "~/.config/i3/mouse_warp.sh"
-bindsym $mod+Right focus right; exec "~/.config/i3/mouse_warp.sh"
+bindsym $mod+Left focus left; exec --no-startup-id "~/.config/i3/mouse_warp.sh"
+bindsym $mod+Down focus down; exec --no-startup-id "~/.config/i3/mouse_warp.sh"
+bindsym $mod+Up focus up; exec --no-startup-id "~/.config/i3/mouse_warp.sh"
+bindsym $mod+Right focus right; exec --no-startup-id "~/.config/i3/mouse_warp.sh"
 
 # move focused window
-bindsym $mod+Shift+j move left; exec "~/.config/i3/mouse_warp.sh"
-bindsym $mod+Shift+k move down; exec "~/.config/i3/mouse_warp.sh"
-bindsym $mod+Shift+l move up; exec "~/.config/i3/mouse_warp.sh"
-bindsym $mod+Shift+semicolon move right; exec "~/.config/i3/mouse_warp.sh"
+bindsym $mod+Shift+j move left; exec --no-startup-id "~/.config/i3/mouse_warp.sh"
+bindsym $mod+Shift+k move down; exec --no-startup-id "~/.config/i3/mouse_warp.sh"
+bindsym $mod+Shift+l move up; exec --no-startup-id "~/.config/i3/mouse_warp.sh"
+bindsym $mod+Shift+semicolon move right; exec --no-startup-id "~/.config/i3/mouse_warp.sh"
 
 # move focused window with cursor keys:
-bindsym $mod+Shift+Left move left; exec "~/.config/i3/mouse_warp.sh"
-bindsym $mod+Shift+Down move down; exec "~/.config/i3/mouse_warp.sh"
-bindsym $mod+Shift+Up move up; exec "~/.config/i3/mouse_warp.sh"
-bindsym $mod+Shift+Right move right; exec "~/.config/i3/mouse_warp.sh"
+bindsym $mod+Shift+Left move left; exec --no-startup-id "~/.config/i3/mouse_warp.sh"
+bindsym $mod+Shift+Down move down; exec --no-startup-id "~/.config/i3/mouse_warp.sh"
+bindsym $mod+Shift+Up move up; exec --no-startup-id "~/.config/i3/mouse_warp.sh"
+bindsym $mod+Shift+Right move right; exec --no-startup-id "~/.config/i3/mouse_warp.sh"
 
 # move workspace between screens
 bindsym $mod+Ctrl+semicolon move workspace to output right
@@ -187,15 +187,15 @@ bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 
 # moving containers to workspace
-bindsym $mod+Shift+1 move container to workspace number $ws1
-bindsym $mod+Shift+2 move container to workspace number $ws2
-bindsym $mod+Shift+3 move container to workspace number $ws3
-bindsym $mod+Shift+4 move container to workspace number $ws4
-bindsym $mod+Shift+5 move container to workspace number $ws5
-bindsym $mod+Shift+6 move container to workspace number $ws6
-bindsym $mod+Shift+7 move container to workspace number $ws7
-bindsym $mod+Shift+8 move container to workspace number $ws8
-bindsym $mod+Shift+9 move container to workspace number $ws9
+bindsym $mod+Shift+1 move container to workspace number $ws1; exec --no-startup-id "~/.config/i3/mouse_warp.sh"
+bindsym $mod+Shift+2 move container to workspace number $ws2; exec --no-startup-id "~/.config/i3/mouse_warp.sh"
+bindsym $mod+Shift+3 move container to workspace number $ws3; exec --no-startup-id "~/.config/i3/mouse_warp.sh"
+bindsym $mod+Shift+4 move container to workspace number $ws4; exec --no-startup-id "~/.config/i3/mouse_warp.sh"
+bindsym $mod+Shift+5 move container to workspace number $ws5; exec --no-startup-id "~/.config/i3/mouse_warp.sh"
+bindsym $mod+Shift+6 move container to workspace number $ws6; exec --no-startup-id "~/.config/i3/mouse_warp.sh"
+bindsym $mod+Shift+7 move container to workspace number $ws7; exec --no-startup-id "~/.config/i3/mouse_warp.sh"
+bindsym $mod+Shift+8 move container to workspace number $ws8; exec --no-startup-id "~/.config/i3/mouse_warp.sh"
+bindsym $mod+Shift+9 move container to workspace number $ws9; exec --no-startup-id "~/.config/i3/mouse_warp.sh"
 
 
 
