@@ -26,7 +26,6 @@ The "other" folder contains configs speccific for my setup (x1 Extreme gen 1 wit
 - gestures
 - writeup for each program with packages required
 - brightness adjustment
-- vertical monitor swapping
 - screenshot method
 - power managment (tlp/powertop)
 - shutdown/restart/etc
