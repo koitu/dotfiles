@@ -13,7 +13,10 @@ The "other" folder contains configs speccific for my setup (x1 Extreme gen 1 wit
 
 ## Todo
 - i3
+- mouse does not warp to centre to empty window
+- wallpaper when vertical
 - vim
+- screen tearing not fully gone
 - rofi plugins
 - zathura
 - polybar

@@ -19,7 +19,7 @@
     sort = yes
     idle_threshold = 120
     font = Firacode Nerd Font Mono 11
-    line_height = 0
+    line_height = 5
     markup = full
     format = "<span foreground='#f3f4f5'><b>%s %p</b></span>\n%b"
     alignment = left
