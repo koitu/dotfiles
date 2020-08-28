@@ -4,3 +4,4 @@ install pulseaudio-alsa
 move daemon.conf to /etc/pulse/
 systemctl --user start pulseaudio
 systemctl --user enable pulseaudio
+remember to copy updated conf to this dir

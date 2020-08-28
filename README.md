@@ -15,6 +15,7 @@ The "other" folder contains configs speccific for my setup (x1 Extreme gen 1 wit
 - i3
 - mouse does not warp to centre to empty window
 - wallpaper when vertical
+- make pulse sound good (+ make alsa good too)
 - vim
 - screen tearing not fully gone
 - rofi plugins
