@@ -16,13 +16,15 @@ The "other" folder contains configs speccific for my setup (x1 Extreme gen 1 wit
 - mouse does not warp to centre to empty window
 - wallpaper when vertical
 - make pulse sound good (+ make alsa good too)
+- wallpaper folder (for i3, feh, lightdm, others)
 - vim
 - screen tearing not fully gone
 - rofi plugins
 - zathura
 - polybar
 - termite
-- colors
+- colors (for i3, i3status, polybar, others)
+- custom os logo for lightdm (2bwm dwm) + backup current theme
 - mpd
 - ncmpcpp
 - try zsh

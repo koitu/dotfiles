@@ -299,7 +299,6 @@ exec --no-startup-id feh --bg-fill ~/.config/i3/fuzzy_wall.jpg
 exec_always --no-startup-id picom -b
 #  exec --no-startup-id polybar top
 #  exec --no-startup-id i3-msg 'workspace $ws8; exec termite -e ncmpcpp'
-exec --no-startup-id i3-msg 'workspace $ws5; exec discord'
 exec --no-startup-id xbanish
 
 #  #start authentication agent
@@ -314,6 +313,7 @@ exec --no-startup-id umonitor --autoload
 #	exec --no-startup-id umonitor --listen --daemonize
 
 
+exec --no-startup-id i3-msg 'workspace $ws5; exec discord'
 
 
 #####################
