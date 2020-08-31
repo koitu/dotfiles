@@ -310,6 +310,12 @@ exec --no-startup-id xbanish
 
 
 
+exec --no-startup-id umonitor --autoload
+#	exec --no-startup-id umonitor --listen --daemonize
+
+
+
+
 #####################
 ### color palette ###
 #####################

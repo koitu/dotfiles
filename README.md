@@ -118,21 +118,17 @@ Restart laptop
 ---
 
 ### Multihead and Nvidia
-
-https://github.com/phillipberndt/autorandr
+follow setup steps from here:
+https://github.com/rliou92/python-umonitor
 ```
-sudo pacman -S optimus-manager autorandr
-sudo systemctl enable optimus-manager autorandr
+sudo pacman -S optimus-manager python-umonitor-git
+sudo systemctl enable optimus-manager 
 ```
+move optimus-manager and umonitor configs to proper locations
+umonitor config is already in i3 config
 Restart laptop
 
 ---
-
-To reconfigure docked mode:
-```
-autorandr --remove docked
-autorandr --save docked
-```
 
 ### Redshift
 
