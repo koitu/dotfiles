@@ -12,7 +12,7 @@ The "other" folder contains configs speccific for my setup (x1 Extreme gen 1 wit
 - [My Laptop](#My Laptop)
 
 ## Todo
-- i3
+- i3 (config + scratchpad + other stuff)
 - mouse does not warp to centre to empty window
 - wallpaper when vertical
 - make pulse sound good (+ make alsa good too)
@@ -94,6 +94,10 @@ Coming soon
 
 ## General configs
 
+### pacman
+change you can do:
+you can use ccache to improve build times by caching the result of compilations for successive use.
+In makepkg.conf the line `PKGEXT='.pkg.tar' makepkg` will allow you skip compression but you will have larger packages
 ### i3
 install xdotool xbanish
 
