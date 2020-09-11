@@ -12,6 +12,9 @@ The "other" folder contains configs speccific for my setup (x1 Extreme gen 1 wit
 - [My Laptop](#My Laptop)
 
 ## Todo
+- xkcd mirrorboard
+- custom bash prompt
+- try zsh and fish
 - i3 (config + scratchpad + other stuff)
 - mouse does not warp to centre to empty window
 - wallpaper when vertical
@@ -20,6 +23,10 @@ The "other" folder contains configs speccific for my setup (x1 Extreme gen 1 wit
 - vim
 - screen tearing not fully gone
 - rofi plugins
+> https://github.com/fdw/rofimoji
+> https://github.com/svenstaro/rofi-calc
+> https://github.com/mattydebie/bitwarden-rofi
+> and more
 - zathura
 - polybar
 - termite
@@ -27,9 +34,8 @@ The "other" folder contains configs speccific for my setup (x1 Extreme gen 1 wit
 - custom os logo for lightdm (2bwm dwm) + backup current theme
 - mpd
 - ncmpcpp
-- try zsh
 - gtk + qt theme
-- gestures
+- gestures (fusuma)
 - writeup for each program with packages required
 - brightness adjustment
 - screenshot method
