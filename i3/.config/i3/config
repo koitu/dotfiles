@@ -160,7 +160,7 @@ hide_edge_borders smart
 ### workspace settings ###
 ##########################
 
-# focus wrapping <yes|no|force|workspace>
+# focus wrapping (behaviour at end of screen) <yes|no|force|workspace>
 focus_wrapping no
 
 # focus on the container mouse is hovering over
