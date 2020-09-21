@@ -12,6 +12,7 @@ The "other" folder contains configs speccific for my setup (x1 Extreme gen 1 wit
 - [My Laptop](#My Laptop)
 
 ## Todo
+- more in bookmarks
 - xkcd mirrorboard
 - custom bash prompt
 - try zsh and fish
@@ -27,6 +28,9 @@ The "other" folder contains configs speccific for my setup (x1 Extreme gen 1 wit
 > https://github.com/svenstaro/rofi-calc
 > https://github.com/mattydebie/bitwarden-rofi
 > and more
+- league of linux
+- cmd torrent client
+- dunst (max lines https://wiki.archlinux.org/index.php/Dunst)
 - zathura
 - polybar
 - termite

@@ -12,4 +12,3 @@ for file in configs
     execute 'source' x
   endif
 endfor
-

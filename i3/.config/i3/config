@@ -1,6 +1,6 @@
 # assign workspace to monitors
-workspace $ws1 output DP-1.1.1 eDP-1-1
-workspace $ws2 output DP-1.1.1 eDP-1-1
+workspace $ws1 output DP-1.1.1 HDMI-0 eDP-1-1
+workspace $ws2 output DP-1.1.1 HDMI-0 eDP-1-1
 workspace $ws3 output DP-1.1.8 eDP-1-1
 workspace $ws4 output DP-1.1.8 eDP-1-1
 workspace $ws5 output eDP-1-1
@@ -309,8 +309,7 @@ exec --no-startup-id xbanish
 
 
 
-exec --no-startup-id umonitor --autoload
-#	exec --no-startup-id umonitor --listen --daemonize
+exec --no-startup-id umonitor --autoload && umonitor --listen --daemonize
 
 
 exec --no-startup-id i3-msg 'workspace $ws5; exec discord'

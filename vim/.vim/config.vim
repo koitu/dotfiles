@@ -10,7 +10,11 @@ vmap <C-c> "+y
 vmap <C-x> "+c
 vmap <C-v> "+p
 
+" allow mouse
+set mouse=a
+
 set autoindent
+
 
 " text wrapping
 set wrap

@@ -21,4 +21,28 @@ call plug#begin('~/.vim/vim-plug')
 " style
 Plug 'lilydjwg/colorizer'
 
+" latex
+Plug 'lervag/vimtex'
+
+" snippets
+Plug 'sirver/ultisnips'
+
 call plug#end()
+
+" note: can move this config into plug#begin
+
+" lilydjwg/colorizer
+let g:colorizer_maxlines = 1000
+
+" lervag/vimtex
+let g:tex_flavor='latex'
+let g:vimtex_view_method='zathura'
+let g:vimtex_quickfix_mode=0
+set conceallevel=1
+let g:tex_conceal='abdmg'
+
+" sirver/ultisnips
+let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+let g:UltiSnipsSnippetDirectories=["/home/koitu/.vim/UltiSnips"]
