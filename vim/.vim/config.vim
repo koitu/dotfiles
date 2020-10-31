@@ -15,6 +15,9 @@ set mouse=a
 
 set autoindent
 
+" ctrl-backspace in terminal vim
+noremap! <C-BS> <C-w>
+noremap! <C-h> <C-w>
 
 " text wrapping
 set wrap
@@ -28,6 +31,10 @@ set smartcase
 
 " line numbering 
 set nu rnu
+
+" spellcheck
+" setlocal spell
+" set spelllang=en_ca
 
 " auto move to last position (find plugin)
 if has("autocmd")

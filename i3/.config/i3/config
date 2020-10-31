@@ -304,7 +304,7 @@ exec --no-startup-id xbanish
 #  #start authentication agent
 #  exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
-#  bindsym Print exec scrot -z -m -q 100 
+ bindsym Print exec scrot -z -m -q 100 
 #  bindsym Ctrl+Print exec scrot -z -s -m -f -q 100
 
 

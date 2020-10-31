@@ -23,6 +23,7 @@ Plug 'lilydjwg/colorizer'
 
 " latex
 Plug 'lervag/vimtex'
+Plug 'KeitaNakamura/tex-conceal.vim'
 
 " snippets
 Plug 'sirver/ultisnips'
@@ -38,8 +39,31 @@ let g:colorizer_maxlines = 1000
 let g:tex_flavor='latex'
 let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
+" start compiler on start and clean before exit
+augroup vimtex_event_1
+  au!
+  au User VimtexEventQuit     call vimtex#compiler#clean(0)
+  au User VimtexEventInitPost call vimtex#compiler#compile()
+augroup END
+
+" Close viewers when vimtex buffers are closed
+function! CloseViewers()
+  " Close viewers on quit
+  if executable('xdotool') && exists('b:vimtex')
+      \ && exists('b:vimtex.viewer') && b:vimtex.viewer.xwin_id > 0
+    call system('xdotool windowclose '. b:vimtex.viewer.xwin_id)
+  endif
+endfunction
+
+augroup vimtex_event_2
+  au!
+  au User VimtexEventQuit call CloseViewers()
+augroup END
+
+" 'KeitaNakamura/tex-conceal.vim'
 set conceallevel=1
 let g:tex_conceal='abdmg'
+hi Conceal ctermbg=none
 
 " sirver/ultisnips
 let g:UltiSnipsExpandTrigger = '<tab>'

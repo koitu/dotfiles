@@ -157,3 +157,9 @@ systemctl --user enable redshift
 ```
 Restart laptop
 
+
+### random fonts that are good
+FuraCode Nerd Font Mono
+Hack (donno)
+M+ 1c
+Noto-sans-cjk
