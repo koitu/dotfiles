@@ -13,6 +13,27 @@ vmap <C-v> "+p
 " allow mouse
 set mouse=a
 
+" ctrl+h and ctrl+l to move word by word (you already have b and w?)
+" ctrl+j and ctrl+k to move by 3 lines per time? or somethings else (just do
+" 10j or something)
+"
+" i to zzi, a to zza, and A to zza?
+" eeeeeeee
+"
+" bind :noh to something 
+" :noh clears the search highlighting
+"
+" insert newline without entering insert mode
+" https://vim.fandom.com/wiki/Insert_newline_without_entering_insert_mode
+
+
+
+" try to stay in middle when moving up/down
+" problem: when typing at end snaps back to bottom (only happens if so>~25)
+" temp solution: use zz to centre
+" possible solution: remap j to jzz and k to kzz
+set so=20
+
 set autoindent
 
 " ctrl-backspace in terminal vim
