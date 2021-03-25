@@ -75,11 +75,12 @@ endsnippet
 # \end{document}
 # endsnippet
 # 
-# snippet beg "begin{} / end{}" bA
-# \\begin{$1}
-# 	$0
-# \\end{$1}
-# endsnippet
+snippet \begin "begin{} / end{}" 
+\\begin{$1}
+	$0
+\\end{$1}
+endsnippet
+
 # 
 # priority 100
 # snippet ... "ldots" iA
@@ -221,20 +222,20 @@ endsnippet
 # `
 # endsnippet
 # 
-# priority 1000
-# snippet math "mathematicablock" w
-# math $1 math$0
-# endsnippet
-# 
-# priority 10000
-# snippet 'math(.*)math' "math" wr
-# `!p
-# import subprocess
-# code = match.group(1)
-# code = 'ToString[' + code + ', TeXForm]'
-# snip.rv = subprocess.check_output(['wolframscript', '-code', code])
-# `
-# endsnippet
+priority 1000
+snippet math "mathematicablock" w
+math $1 math$0
+endsnippet
+
+priority 10000
+snippet 'math(.*)math' "math" wr
+`!p
+import subprocess
+code = match.group(1)
+code = 'ToString[' + code + ', TeXForm]'
+snip.rv = subprocess.check_output(['wolframscript', '-code', code])
+`
+endsnippet
 # 
 # snippet == "equals" iA
 # &= $1 \\\\

@@ -6,15 +6,17 @@ set scroll-step 150
 
 set scroll-page-aware true
 
+set zoom-step 25
+
+# not working
+# set font "Firacode Nerd Font Mono 11"
+
 # colors
 set recolor true
-set default-fg "#b8b8c8"
-#set default-fg "#839496" # darker
+set default-fg "#839496" 
 set default-bg "#09090d"
 
-set recolor-darkcolor "#b8b8c8"
-#set recolor-darkcolor "#839496" # darker
-#set recolor-darkcolor "#D8DEE9" # blue
+set recolor-darkcolor "#839496" 
 set recolor-lightcolor  "#09090d"
 
 set statusbar-fg "#838486"

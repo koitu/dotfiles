@@ -66,7 +66,7 @@ memory {
 volume master {
         format = "V: %volume"
         format_muted = "♪: muted (%volume)"
-        device = "pulse:1"
+        device = "default"
 }
 
 tztime local {

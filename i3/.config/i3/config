@@ -39,9 +39,9 @@ bindsym XF86MonBrightnessUp exec --no-startup-id "xbacklight -inc 10"
 bindsym XF86MonBrightnessDown exec --no-startup-id "xbacklight -dec 10"
 
 # mpd controls (maybe replace with playerctl)
-#bindsym XF86AudioNext exec --no-startup-id mpc next
-#bindsym XF86AudioPrev exec --no-startup-id mpc prev
-#bindsym XF86AudioPlay exec --no-startup-id mpc toggle
+bindsym XF86AudioNext exec --no-startup-id mpc next
+bindsym XF86AudioPrev exec --no-startup-id mpc prev
+bindsym XF86AudioPlay exec --no-startup-id mpc toggle
 
 
 
@@ -111,8 +111,8 @@ bindsym $mod+Ctrl+semicolon move workspace to output right
 bindsym $mod+Ctrl+j move workspace to output left
 
 # split orientation
-bindsym $mod+h split h; exec notify-send 'tile horizontally'
-bindsym $mod+v split v; exec notify-send 'tile vertically'
+#bindsym $mod+h split h; exec notify-send 'tile horizontally'
+#bindsym $mod+v split v; exec notify-send 'tile vertically'
 bindsym $mod+q split toggle; exec notify-send 'toggle'
 
 # fullscreen mode toggle

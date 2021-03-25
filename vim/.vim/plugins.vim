@@ -46,6 +46,13 @@ augroup vimtex_event_1
   au User VimtexEventInitPost call vimtex#compiler#compile()
 augroup END
 
+let g:vimtex_compiler_latexmk = {
+			\ 'options' : [
+				\ '-synctex=0',
+			\],
+		\}
+
+
 " Close viewers when vimtex buffers are closed
 function! CloseViewers()
   " Close viewers on quit
