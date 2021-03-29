@@ -53,6 +53,9 @@ bindsym XF86AudioPlay exec --no-startup-id mpc toggle
 # start a terminal
 bindsym $mod+Return exec termite
 
+# start file manager
+bindsym $mod+Shift+Return exec thunar
+
 # kill focused window
 bindsym $mod+Shift+q kill
 

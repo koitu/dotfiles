@@ -47,11 +47,18 @@ augroup vimtex_event_1
 augroup END
 
 let g:vimtex_compiler_latexmk = {
-			\ 'options' : [
-				\ '-synctex=0',
-			\],
-		\}
-
+	\ 'build_dir' : '',
+        \ 'callback' : 1,
+        \ 'continuous' : 1,
+        \ 'executable' : 'latexmk',
+        \ 'hooks' : [],
+        \ 'options' : [
+        \   '-verbose',
+        \   '-file-line-error',
+        \   '-synctex=0',
+        \   '-interaction=nonstopmode',
+        \ ],
+        \}
 
 " Close viewers when vimtex buffers are closed
 function! CloseViewers()
