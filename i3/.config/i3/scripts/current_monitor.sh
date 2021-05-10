@@ -15,9 +15,8 @@
 # [-0-9] matches - or any number 0-9
 # + matches all that agree with previous token more then once???
 # OFFSET="\+([-0-9]+)\+([-0-9]+)"
-eval "$(xdotool getmouselocation --shell)"
 
-# $(expr $W + $W) is the same as $(($W+$W))
+eval "$(xdotool getmouselocation --shell)"
 
 while read name width height xoff yoff
 do
@@ -32,6 +31,7 @@ do
 done < <(xrandr | grep -w connected | sed -r "s/^([^ ]*).*\b([-0-9]+)x([-0-9]+)\+([-0-9]+)\+([-0-9]+).*$/\1 \2 \3 \4 \5/" | sort -nk 4,5)
 
 echo $monitor
+
 #   # If we found a monitor, echo it out, otherwise print an error.
 #   if [ ! -z "$monitor" ]
 #   then

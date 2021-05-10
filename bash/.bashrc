@@ -18,3 +18,10 @@ PS1='[\u@\h \W]\$ '
 
 # add .local/bin to executable path
 export PATH="$HOME/.local/bin:$PATH"
+
+# load virtualenvwrapper for python (after custom PATHs)
+venvwrap="virtualenvwrapper.sh"
+if [ $? -eq 0 ]; then
+    venvwrap=`/usr/bin/which $venvwrap`
+    source $venvwrap
+fi

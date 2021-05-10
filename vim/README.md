@@ -52,7 +52,8 @@ yt{x} - yank from current pos to {x} lines down
 yf{x} - yank from current pos to {x} lines down
 
 d - delete (visual)
-dd or D - delete line
+dd - delete line
+D - delete until end of line
 dw - delete next word
 db - delete previous word
 d:1,10 - delete line 1 to 9
@@ -64,7 +65,9 @@ p - paste
 J - remove \n
 
 r - replace (character)
+R - replace mode (like insert but overwrites characters)
 ~ - swap case
+C - delete until end of line and insert mode
 cc - delete line and insert mode
 s - delete charcter and insert mode
 S - same as cc
