@@ -17,6 +17,7 @@ order += "ethernet _first_"
 order += "battery all"
 order += "disk /"
 order += "disk /home"
+order += "disk /srv"
 order += "memory"
 order += "load"
 order += "cpu_temperature 0"
@@ -30,12 +31,15 @@ cpu_temperature 0 {
 }
 
 wireless _first_ {
-        format_up = "W: (%quality at %essid) %ip"
+#        format_up = "W: (%quality at %essid ) %ip"
+#        format_up = "W: %quality at %ip"
+        format_up = "W:%quality at %ip"
         format_down = "W: down"
 }
 
 ethernet _first_ {
-        format_up = "E: %ip (%speed)"
+#        format_up = "E: %ip (%speed)"
+        format_up = "E: %ip"
 #        format_down = "E: down"
 	format_down = ""
 }
@@ -52,8 +56,13 @@ disk "/home" {
 	format = "/home: %avail"
 }
 
+disk "/srv" {
+	format = "/srv: %avail"
+	format_not_mounted = ""
+}
+
 load {
-        format = "%1min"
+ 	format = "%1min"
 }
 
 memory {
@@ -65,7 +74,8 @@ memory {
 
 volume master {
         format = "V: %volume"
-        format_muted = "♪: muted (%volume)"
+#        format_muted = "♪: muted (%volume)"
+        format_muted = "V: muted (%volume)"
         device = "default"
 }
 

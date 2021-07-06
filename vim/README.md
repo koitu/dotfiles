@@ -114,6 +114,16 @@ Ctrl-ww - swap windows
 Ctrl-wq - quit window
 Ctrl-wv - split window vertically
 
+Ctrl-wh - move right
+Ctrl-wj - move down
+Ctrl-wk - move up
+Ctrl-wl - move left
+
+Ctrl-wH - move window right
+Ctrl-wJ - move window down
+Ctrl-wK - move window up
+Ctrl-wL - move window left
+
 qa - start recording macro to @a (qb, qc, ...)
 qA - start recording append to macro @a
 q - end recording macro
@@ -210,3 +220,9 @@ search like command without highlighting - but regular search still has highligh
 Random thing: must shells don't differentiate between lowercase and uppercase control characters. So vim can't either.
 
 This means that Ctrl-x is equivelent to Ctrl-X
+
+
+
+:Exp - open vim file explorer
+:Sex - split horizontally and open file explorer on top
+:Vex - split vertically and open file explorer on left

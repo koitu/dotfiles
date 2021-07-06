@@ -8,6 +8,12 @@ set scroll-page-aware true
 
 set zoom-step 25
 
+# copy to clipboard
+set selection-clipboard clipboard
+
+# open pdf links
+set sandbox none
+
 # not working
 # set font "Firacode Nerd Font Mono 11"
 

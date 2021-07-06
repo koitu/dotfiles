@@ -35,10 +35,14 @@ set mouse=a
 set so=20
 
 set autoindent
+set smartindent
 
 " ctrl-backspace in terminal vim
 noremap! <C-BS> <C-w>
 noremap! <C-h> <C-w>
+
+" make ctrl-w not stop at insertion point
+set backspace+=nostop
 
 " text wrapping
 set wrap
