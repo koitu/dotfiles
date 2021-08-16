@@ -63,7 +63,7 @@ bindsym $mod+Shift+q kill
 #bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu='rofi -i -dmenu'
 bindsym $mod+d exec --no-startup-id rofi -show
 bindsym $mod+Ctrl+d exec --no-startup-id networkmanager_dmenu
-bindsym $mod+Shift+d exec --no-startup-id rofi -show emoji -modi emoji
+bindsym $mod+Shift+d exec --no-startup-id rofi -modi "emoji:rofimoji" -show emoji
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop 

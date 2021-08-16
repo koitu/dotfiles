@@ -36,10 +36,15 @@ set so=20
 
 set autoindent
 set smartindent
+set tabstop=4 expandtab softtabstop=4
 
 " ctrl-backspace in terminal vim
 noremap! <C-BS> <C-w>
 noremap! <C-h> <C-w>
+
+" make enter behave sanely
+" noremap! <Enter> j
+
 
 " make ctrl-w not stop at insertion point
 set backspace+=nostop

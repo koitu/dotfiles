@@ -12,7 +12,6 @@ The "other" folder contains configs speccific for my setup (x1 Extreme gen 1 wit
 - [My Laptop](#My Laptop)
 
 ## Todo
-- more in bookmarks
 - xkcd mirrorboard
 - custom bash prompt
 - try zsh and fish
@@ -22,15 +21,6 @@ The "other" folder contains configs speccific for my setup (x1 Extreme gen 1 wit
 - make pulse sound good (+ make alsa good too)
 - wallpaper folder (for i3, feh, lightdm, others)
 - vim
-- screen tearing not fully gone
-- rofi plugins
-> https://github.com/fdw/rofimoji
-> https://github.com/svenstaro/rofi-calc
-> https://github.com/mattydebie/bitwarden-rofi
-> and more
-- league of linux
-- cmd torrent client
-- dunst (max lines https://wiki.archlinux.org/index.php/Dunst)
 - zathura
 - polybar
 - termite
@@ -158,7 +148,7 @@ systemctl --user enable redshift
 Restart laptop
 
 
-### random fonts that are good
+### nice fonts 
 FuraCode Nerd Font Mono
 Hack (donno)
 M+ 1c

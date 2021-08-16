@@ -1,12 +1,14 @@
-wat bash help
+### Useful bash commands
+- delete word
+> Ctrl+w
+- end of line
+> Ctrl+e
+- start of line
+> Ctrl+a
+- clear
+> Ctrl+l
+- delete everything before cursor
+> Ctrl+u
 
-Ctrl+w - delete word
-Ctrl+e - go to end of line
-Ctrl+a - go to start of line
-Ctrl+l - clear terminal
-Ctrl+u - delete everything before cursor
-Ctrl+d - exit
-Ctrl+c - cancel
-
-Ctrl+C - copy
-Ctrl+V - paste
+### More bash commands
+https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/bash.sh
