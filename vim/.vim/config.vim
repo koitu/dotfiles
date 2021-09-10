@@ -36,7 +36,12 @@ set so=20
 
 set autoindent
 set smartindent
-set tabstop=4 expandtab softtabstop=4
+
+" tabs made of spaces but behave like tabs
+set tabstop=4 shiftwidth=4 expandtab softtabstop=4
+
+" force use of tabs in Makefiles
+autocmd FileType make setlocal noexpandtab
 
 " ctrl-backspace in terminal vim
 noremap! <C-BS> <C-w>
