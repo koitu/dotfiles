@@ -1,8 +1,8 @@
 /* install rofi-dmenu to force networkmanager_dmenu (and other dmenu programs) to use rofi */
 /* window (window switcher) run (execute cmds) drun (.desktop launcher) ssh (ssh) */
 /* configure modi/combi-modi and run rofi -show <modi selected>/combi */
+/* located in ~/.config/rofi/theme.rasi */
 configuration {
-	theme: "theme";//located in ~/.config/rofi/theme.rasi
 	modi: "drun";
 //	combi-modi: "drun,run";
 //	modi: "combi";
@@ -118,4 +118,5 @@ configuration {
 	me-select-entry: "";
 	me-accept-entry: "MousePrimary";
 	me-accept-custom: "Control+MouseDPrimary";//MouseDPrimary is double click
-}
+} 
+@theme "theme.rasi"

@@ -20,6 +20,7 @@ PS1='[\u@\h \W]\$ '
 export PATH="$HOME/.local/bin:$PATH"
 
 # load virtualenvwrapper for python (after custom PATHs)
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 venvwrap="virtualenvwrapper.sh"
 if [ $? -eq 0 ]; then
     venvwrap=`/usr/bin/which $venvwrap`

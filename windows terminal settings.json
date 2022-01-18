@@ -1,39 +1,7 @@
 {
-    "multiLinePasteWarning": false,
     "$schema": "https://aka.ms/terminal-profiles-schema",
     "actions": 
     [
-        {
-            "command": 
-            {
-                "action": "switchToTab",
-                "index": 3
-            },
-            "keys": "alt+4"
-        },
-        {
-            "command": 
-            {
-                "action": "swapPane",
-                "direction": "left"
-            },
-            "keys": "alt+shift+j"
-        },
-        {
-            "command": 
-            {
-                "action": "swapPane",
-                "direction": "down"
-            },
-            "keys": "alt+shift+l"
-        },
-        {
-            "command": 
-            {
-                "action": "copy",
-                "singleLine": false
-            }
-        },
         {
             "command": "unbound",
             "keys": "ctrl+c"
@@ -207,11 +175,42 @@
             "keys": "ctrl+d"
         },
         {
+            "command": "unbound",
+            "keys": "ctrl+v"
+        },
+        {
             "command": 
             {
-                "action": "newTab"
+                "action": "copy",
+                "singleLine": false
+            }
+        },
+        {
+            "command": 
+            {
+                "action": "swapPane",
+                "direction": "down"
             },
-            "keys": "ctrl+t"
+            "keys": "alt+shift+l"
+        },
+        {
+            "command": 
+            {
+                "action": "swapPane",
+                "direction": "left"
+            },
+            "keys": "alt+shift+j"
+        },
+        {
+            "command": 
+            {
+                "action": "switchToTab",
+                "index": 3
+            },
+            "keys": "alt+4"
+        },
+        {
+            "command": "paste"
         },
         {
             "command": 
@@ -222,8 +221,11 @@
             "keys": "alt+shift+enter"
         },
         {
-            "command": "paste",
-            "keys": "ctrl+v"
+            "command": 
+            {
+                "action": "newTab"
+            },
+            "keys": "ctrl+t"
         },
         {
             "command": "find",
@@ -449,6 +451,7 @@
     "disableAnimations": true,
     "language": "en-US",
     "launchMode": "maximized",
+    "multiLinePasteWarning": false,
     "profiles": 
     {
         "defaults": 
@@ -466,9 +469,14 @@
                 "bellStyle": "none",
                 "closeOnExit": "always",
                 "colorScheme": "color",
-                "commandline": "ssh wandrew@coop",
+                "commandline": "ssh -o \"ServerAliveInterval 30\" wandrew@coop",
                 "cursorShape": "filledBox",
                 "experimental.retroTerminalEffect": false,
+                "font": 
+                {
+                    "face": "Fira Code",
+                    "size": 11
+                },
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "icon": null,
