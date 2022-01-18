@@ -8,8 +8,8 @@ The "other" folder contains configs speccific for my setup (x1 Extreme gen 1 wit
 - [Todo](#Todo)
 - [Installation](#Installation)
 - [Screenshots](#Screenshots)
-- [Configs](#General Configs)
-- [My Laptop](#My Laptop)
+- [Configs](#General-Configs)
+- [My Laptop](#My-Laptop)
 
 ## Todo
 - xkcd mirrorboard
