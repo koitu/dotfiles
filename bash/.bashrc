@@ -6,6 +6,7 @@
 [[ $- != *i* ]] && return
 
 export EDITOR='vim'
+export QT_QPA_PLATFORMTHEME='gtk2'
 alias ls='ls --color=auto'
 alias ssh='TERM=xterm-color ssh'
 alias sleeptime='sleep 0.5 && xset dpms force off'

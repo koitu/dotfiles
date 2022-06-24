@@ -64,7 +64,7 @@ cursor = #839496
 
 
 # 20% background transparency (requires a compositor)
-#background = rgba(63, 63, 63, 0.8)
+# background = rgba(63, 63, 63, 0.8)
 
 # If unset, will reverse foreground and background
 highlight = #2f2f2f
@@ -95,6 +95,8 @@ color14 = #82a2b2
 #white
 color7 = #8c8b8b
 color15 = #b8b8c8
+
+# for some reason the bold words in neofetch use color14
 
 
 [hints]

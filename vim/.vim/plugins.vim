@@ -39,6 +39,10 @@ let g:colorizer_maxlines = 1000
 let g:tex_flavor='latex'
 let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
+" don't want backtick to be an dead key
+" https://ejmastnak.github.io/tutorials/vim-latex/vimtex.html
+let g:vimtex_imaps_enabled=0      " disable insert mode mappings (e.g. if you use UltiSnips)
+
 " start compiler on start and clean before exit
 augroup vimtex_event_1
   au!
