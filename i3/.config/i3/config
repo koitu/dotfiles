@@ -1,8 +1,8 @@
 # assign workspace to monitors
-workspace $ws1 output DP-1.1.1 DP-0 HDMI-0 DP-1 eDP-1-1 
-workspace $ws2 output DP-1.1.1 DP-0 HDMI-0 DP-1 eDP-1-1 
-workspace $ws3 output DP-1.1.8 DP-1 eDP-1-1
-workspace $ws4 output DP-1.1.8 DP-1 eDP-1-1
+workspace $ws1 output DP-1.1.1 HDMI-0 DP-1 eDP-1-1 
+workspace $ws2 output DP-1.1.1 HDMI-0 DP-1 eDP-1-1 
+workspace $ws3 output DP-1.1.8 DP-1 DP-0 eDP-1-1
+workspace $ws4 output DP-1.1.8 DP-1 DP-0 eDP-1-1
 workspace $ws5 output eDP-1-1
 workspace $ws6 output eDP-1-1
 
@@ -12,10 +12,12 @@ set $mod Mod1
 set $scripts ~/.config/i3/scripts
 
 # Font for window titles. Will also be used by the bar unless a different font is used in the bar {} block below.
+
 #font pango:monospace 8
 
 #font pango:Noto Mono 10
-font pango:Firacode Nerd Font Mono 11 
+
+font pango:Firacode Nerd Font Mono 11
 #font pango:Helvetica Neue, FontAwesome 11
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -147,8 +149,13 @@ bindsym $mod+a focus parent
 workspace_layout default
 
 # border style <normal|normal|1pixel|pixel xx|none|pixel>
-new_window pixel 2
-new_float pixel 2
+# new_window pixel 2
+# new_float pixel 2
+
+# set border size to 2 pixels and disable title bar
+default_border pixel 2
+default_floating_border pixel 2
+for_window [class=".*"] border pixel 2
 
 # hide_edge_borders <none|vertical|horizontal|both|smart>
 hide_edge_borders smart
@@ -278,7 +285,8 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status finds out, if available)
 bar {
-        status_command i3status
+    font pango:Firacode Nerd Font Mono 11 
+    status_command i3status
 }
 
 
@@ -305,6 +313,11 @@ exec_always --no-startup-id picom -b
 #  exec --no-startup-id polybar top
 #  exec --no-startup-id i3-msg 'workspace $ws8; exec termite -e ncmpcpp'
 exec --no-startup-id xbanish
+
+# faster startup for thunar and auto mounting
+exec --no-startup-id thunar --daemon
+
+exec --no-startup-id setxkbmap -option caps:ctrl_modifier
 
 #  #start authentication agent
 #  exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
