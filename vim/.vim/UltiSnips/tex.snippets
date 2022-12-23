@@ -1,6 +1,7 @@
 # to toggle compiling for a doc do :VimtexCompile (or type \ll in normal mode) and then zathura will pop up and every :w you do will update it
 
 # i - inline word (activate snippet even when in other word)
+# w - suppress i when pattern could be part of some word
 # A - automatically activate without tabbing
 
 snippet preamble "weekly document preamble"
@@ -12,7 +13,7 @@ snippet preamble "weekly document preamble"
 \graphicspath{ {./} }
 
 \begin{document}
-
+$0
 \end{document}
 endsnippet
 
@@ -40,7 +41,11 @@ snippet bf "textbf" i
 \textbf{${1:${VISUAL}}}$0
 endsnippet
 
-snippet em "emph" i
+snippet tx "textbf" i
+\text{${1:${VISUAL}}}$0
+endsnippet
+
+snippet em "emph" wi
 \emph{${1:${VISUAL}}}$0
 endsnippet
 
@@ -48,7 +53,25 @@ snippet ls "lstinline" i
 \lstinline{${1:${VISUAL}}}$0
 endsnippet
 
-# for natural numbers do I need \mathbb{R} or could I just use \R
+snippet ol "overline" wi
+\overline{${1:${VISUAL}}}$0
+endsnippet
+
+snippet bb "mathbb" wi
+\mathbb{${1:${VISUAL}}}$0
+endsnippet
+
+snippet cal "mathcal" wi
+\mathcal{${1:${VISUAL}}}$0
+endsnippet
+
+snippet ub "overbrace" wi
+\underbrace{${1:${VISUAL}}}_{$2}$0
+endsnippet
+
+snippet ob "overbrace" wi
+\overbrace{${1:${VISUAL}}}^{$2}$0
+endsnippet
 
 # enable this to allow spell check and ctrl-L to autocorrect
 # setlocal spell
@@ -56,24 +79,24 @@ endsnippet
 # inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 
 # context("math") calls this global to endglobal to only allow autocomplete when in inline or multiline math (to avoid the autofill when typing words in english and dutch)
-# global !p
-# texMathZones = ['texMathZone' + x for x in ['A', 'AS', 'B', 'BS', 'C', 'CS', 'D', 'DS', 'E', 'ES', 'F', 'FS', 'G', 'GS', 'H', 'HS', 'I', 'IS', 'J', 'JS', 'K', 'KS', 'L', 'LS', 'DS', 'V', 'W', 'X', 'Y', 'Z', 'AmsA', 'AmsB', 'AmsC', 'AmsD', 'AmsE', 'AmsF', 'AmsG', 'AmsAS', 'AmsBS', 'AmsCS', 'AmsDS', 'AmsES', 'AmsFS', 'AmsGS' ]]
-# 
-# texIgnoreMathZones = ['texMathText']
-# 
-# texMathZoneIds = vim.eval('map('+str(texMathZones)+", 'hlID(v:val)')")
-# texIgnoreMathZoneIds = vim.eval('map('+str(texIgnoreMathZones)+", 'hlID(v:val)')")
-# 
-# ignore = texIgnoreMathZoneIds[0]
-# 
-# def math():
-# 	synstackids = vim.eval("synstack(line('.'), col('.') - (col('.')>=2 ? 1 : 0))")
-# 	try:
-# 		first = next(i for i in reversed(synstackids) if i in texIgnoreMathZoneIds or i in texMathZoneIds)
-# 		return first != ignore
-# 	except StopIteration:
-# 		return False
-# endglobal
+global !p
+texMathZones = ['texMathZone' + x for x in ['A', 'AS', 'B', 'BS', 'C', 'CS', 'D', 'DS', 'E', 'ES', 'F', 'FS', 'G', 'GS', 'H', 'HS', 'I', 'IS', 'J', 'JS', 'K', 'KS', 'L', 'LS', 'DS', 'V', 'W', 'X', 'Y', 'Z', 'AmsA', 'AmsB', 'AmsC', 'AmsD', 'AmsE', 'AmsF', 'AmsG', 'AmsAS', 'AmsBS', 'AmsCS', 'AmsDS', 'AmsES', 'AmsFS', 'AmsGS' ]]
+
+texIgnoreMathZones = ['texMathText']
+
+texMathZoneIds = vim.eval('map('+str(texMathZones)+", 'hlID(v:val)')")
+texIgnoreMathZoneIds = vim.eval('map('+str(texIgnoreMathZones)+", 'hlID(v:val)')")
+
+ignore = texIgnoreMathZoneIds[0]
+
+def math():
+	synstackids = vim.eval("synstack(line('.'), col('.') - (col('.')>=2 ? 1 : 0))")
+	try:
+		first = next(i for i in reversed(synstackids) if i in texIgnoreMathZoneIds or i in texMathZoneIds)
+		return first != ignore
+	except StopIteration:
+		return False
+endglobal
 # 
 # snippet template "Basic template" b
 # \documentclass[12pt, letterpaper]{article}
@@ -106,11 +129,43 @@ endsnippet
 
 snippet begin "begin{} / end{}" 
 \\begin{$1}
-$0
+${0:${VISUAL}}
 \\end{$1}
 endsnippet
 
-# 
+snippet center "center something"
+\\begin{center}
+	${1:${VISUAL}}$0
+\\end{center}
+endsnippet
+
+snippet tabu "create a table"
+\\begin{tabu}{$1}
+	$0
+\\end{tabu}
+endsnippet
+
+snippet bmat "bmatrix" wi
+\begin{bmatrix}
+	${1:${VISUAL}}
+\end{bmatrix}
+$0
+endsnippet
+
+snippet mat "matrix" wi
+\begin{matrix}
+	${1:${VISUAL}}
+\end{matrix}
+$0
+endsnippet
+
+snippet samepage "samepage block" wi
+\begin{samepage}
+${1:${VISUAL}}
+\end{samepage}
+$0
+endsnippet
+
 # priority 100
 # snippet ... "ldots" iA
 # \ldots
@@ -144,14 +199,14 @@ endsnippet
 
 snippet lst "lstlisting"
 \begin{lstlisting}
-$0
+${0:${VISUAL}}
 \end{lstlisting}
 endsnippet
 
 # snippet enum "Enumerate" bA
 snippet enum "Enumerate"
 \begin{enumerate}
-	\item $0
+	\item ${0:${VISUAL}}
 \end{enumerate}
 endsnippet
 
@@ -160,12 +215,8 @@ endsnippet
 priority 1000
 snippet item "Itemize" 
 \begin{itemize}
-	\item $0
+	\item ${0:${VISUAL}}
 \end{itemize}
-endsnippet
-
-snippet it "item" 
-\item $0
 endsnippet
 
 snippet sec "section"
@@ -229,20 +280,21 @@ endsnippet
 
 snippet ali "Align"
 \begin{align*}
-	$0
+	${0:${VISUAL}}
 \end{align*}
 endsnippet
 
 
 # context "math()"
-# snippet // "Fraction" iA
-# \\frac{$1}{$2}$0
-# endsnippet
-# 
-# snippet / "Convert highlighted to fraction" i
-# \\frac{${VISUAL}}{$1}$0
-# endsnippet
-# 
+# snippet frac "Fraction" iA
+snippet frac "Fraction" i
+\\frac{$1}{$2}$0
+endsnippet
+
+snippet / "Convert highlighted to fraction" i
+\\frac{${VISUAL}}{$1}$0
+endsnippet
+
 # context "math()"
 # snippet '((\d+)|(\d*)(\\)?([A-Za-z]+)((\^|_)(\{\d+\}|\d))*)/' "Convert divides to fraction" wrA
 # \\frac{`!p snip.rv = match.group(1)`}{$1}$0
@@ -292,20 +344,20 @@ endsnippet
 # `
 # endsnippet
 # 
-priority 1000
-snippet math "mathematicablock" w
-math $1 math$0
-endsnippet
-
-priority 10000
-snippet 'math(.*)math' "math" wr
-`!p
-import subprocess
-code = match.group(1)
-code = 'ToString[' + code + ', TeXForm]'
-snip.rv = subprocess.check_output(['wolframscript', '-code', code])
-`
-endsnippet
+# priority 1000
+# snippet math "mathematicablock" w
+# math $1 math$0
+# endsnippet
+# 
+# priority 10000
+# snippet 'math(.*)math' "math" wr
+# `!p
+# import subprocess
+# code = match.group(1)
+# code = 'ToString[' + code + ', TeXForm]'
+# snip.rv = subprocess.check_output(['wolframscript', '-code', code])
+# `
+# endsnippet
 # 
 # snippet == "equals" iA
 # &= $1 \\\\
@@ -314,17 +366,19 @@ endsnippet
 # snippet != "not equal" iA
 # \neq 
 # endsnippet
-# 
-# context "math()"
-# snippet ceil "ceil" iA
-# \left\lceil $1 \right\rceil $0
-# endsnippet
-# 
-# context "math()"
-# snippet floor "floor" iA
-# \left\lfloor $1 \right\rfloor$0
-# endsnippet
-# 
+
+#context "math()"
+snippet ceil "ceil" iA
+#snippet ceil "ceil" i
+\left\lceil $1 \right\rceil $0
+endsnippet
+
+#context "math()"
+#snippet floor "floor" iA
+snippet floor "floor" i
+\left\lfloor $1 \right\rfloor$0
+endsnippet
+
 # snippet pmat "pmat" iA
 # \begin{pmatrix} $1 \end{pmatrix} $0
 # endsnippet
@@ -365,12 +419,12 @@ endsnippet
 # snippet lra "leftangle rightangle" iA
 # \left<${1:${VISUAL}} \right>$0
 # endsnippet
-# 
-# context "math()"
-# snippet conj "conjugate" iA
-# \overline{$1}$0
-# endsnippet
-# 
+
+context "math()"
+snippet conj "conjugate" iA
+\overline{$1}$0
+endsnippet
+
 # snippet sum "sum" w
 # \sum_{n=${1:1}}^{${2:\infty}} ${3:a_n z^n}
 # endsnippet
@@ -390,11 +444,11 @@ endsnippet
 # snippet prod "product" w
 # \prod_{${1:n=${2:1}}}^{${3:\infty}} ${4:${VISUAL}} $0
 # endsnippet
-# 
-# snippet part "d/dx" w
-# \frac{\partial ${1:V}}{\partial ${2:x}} $0
-# endsnippet
-# 
+
+snippet part "d/dx" w
+\frac{\partial $1}{\partial $2} $0
+endsnippet
+
 # context "math()"
 # # snippet sq "\sqrt{}" iA
 # snippet sq "\sqrt{}" i
@@ -692,14 +746,15 @@ endsnippet
 # snippet tt "text" iA
 # \text{$1}$0
 # endsnippet
-# 
+
 # context "math()"
-# snippet case "cases" wA
-# \begin{cases}
-# 	$1
-# \end{cases}
-# endsnippet
-# 
+#snippet case "cases" wA
+snippet case "cases" i
+\begin{cases}
+	$1
+\end{cases}
+endsnippet
+
 # snippet SI "SI" iA
 # \SI{$1}{$2}
 # endsnippet
