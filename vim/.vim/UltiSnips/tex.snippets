@@ -7,7 +7,7 @@
 snippet preamble "weekly document preamble"
 \documentclass[11pt]{article}
 
-\input{../3A_preamble}
+\input{../3B_preamble}
 
 % set graphics path
 \graphicspath{ {./} }
@@ -53,15 +53,25 @@ snippet ls "lstinline" i
 \lstinline{${1:${VISUAL}}}$0
 endsnippet
 
-snippet ol "overline" wi
-\overline{${1:${VISUAL}}}$0
+# use widebars instead
+# snippet ol "overline" wi
+# \overline{${1:${VISUAL}}}$0
+# endsnippet
+
+snippet wb "widebar" wi
+\widebar{${1:${VISUAL}}}$0
 endsnippet
 
-snippet bb "mathbb" wi
+snippet ul "underline" wi
+\underline{${1:${VISUAL}}}$0
+endsnippet
+
+
+snippet bb "mathbb" i
 \mathbb{${1:${VISUAL}}}$0
 endsnippet
 
-snippet cal "mathcal" wi
+snippet cl "mathcal" i
 \mathcal{${1:${VISUAL}}}$0
 endsnippet
 
@@ -79,24 +89,25 @@ endsnippet
 # inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 
 # context("math") calls this global to endglobal to only allow autocomplete when in inline or multiline math (to avoid the autofill when typing words in english and dutch)
-global !p
-texMathZones = ['texMathZone' + x for x in ['A', 'AS', 'B', 'BS', 'C', 'CS', 'D', 'DS', 'E', 'ES', 'F', 'FS', 'G', 'GS', 'H', 'HS', 'I', 'IS', 'J', 'JS', 'K', 'KS', 'L', 'LS', 'DS', 'V', 'W', 'X', 'Y', 'Z', 'AmsA', 'AmsB', 'AmsC', 'AmsD', 'AmsE', 'AmsF', 'AmsG', 'AmsAS', 'AmsBS', 'AmsCS', 'AmsDS', 'AmsES', 'AmsFS', 'AmsGS' ]]
 
-texIgnoreMathZones = ['texMathText']
-
-texMathZoneIds = vim.eval('map('+str(texMathZones)+", 'hlID(v:val)')")
-texIgnoreMathZoneIds = vim.eval('map('+str(texIgnoreMathZones)+", 'hlID(v:val)')")
-
-ignore = texIgnoreMathZoneIds[0]
-
-def math():
-	synstackids = vim.eval("synstack(line('.'), col('.') - (col('.')>=2 ? 1 : 0))")
-	try:
-		first = next(i for i in reversed(synstackids) if i in texIgnoreMathZoneIds or i in texMathZoneIds)
-		return first != ignore
-	except StopIteration:
-		return False
-endglobal
+# global !p
+# texMathZones = ['texMathZone' + x for x in ['A', 'AS', 'B', 'BS', 'C', 'CS', 'D', 'DS', 'E', 'ES', 'F', 'FS', 'G', 'GS', 'H', 'HS', 'I', 'IS', 'J', 'JS', 'K', 'KS', 'L', 'LS', 'DS', 'V', 'W', 'X', 'Y', 'Z', 'AmsA', 'AmsB', 'AmsC', 'AmsD', 'AmsE', 'AmsF', 'AmsG', 'AmsAS', 'AmsBS', 'AmsCS', 'AmsDS', 'AmsES', 'AmsFS', 'AmsGS' ]]
+# 
+# texIgnoreMathZones = ['texMathText']
+# 
+# texMathZoneIds = vim.eval('map('+str(texMathZones)+", 'hlID(v:val)')")
+# texIgnoreMathZoneIds = vim.eval('map('+str(texIgnoreMathZones)+", 'hlID(v:val)')")
+# 
+# ignore = texIgnoreMathZoneIds[0]
+# 
+# def math():
+# 	synstackids = vim.eval("synstack(line('.'), col('.') - (col('.')>=2 ? 1 : 0))")
+# 	try:
+# 		first = next(i for i in reversed(synstackids) if i in texIgnoreMathZoneIds or i in texMathZoneIds)
+# 		return first != ignore
+# 	except StopIteration:
+# 		return False
+# endglobal
 # 
 # snippet template "Basic template" b
 # \documentclass[12pt, letterpaper]{article}
@@ -133,7 +144,7 @@ ${0:${VISUAL}}
 \\end{$1}
 endsnippet
 
-snippet center "center something"
+snippet center "center"
 \\begin{center}
 	${1:${VISUAL}}$0
 \\end{center}
@@ -143,6 +154,12 @@ snippet tabu "create a table"
 \\begin{tabu}{$1}
 	$0
 \\end{tabu}
+endsnippet
+
+snippet minipage "create a minipage"
+\\begin{minipage}[c]{$1\\textwidth}
+	${0:${VISUAL}}
+\\end{minipage}
 endsnippet
 
 snippet bmat "bmatrix" wi
@@ -201,6 +218,21 @@ snippet lst "lstlisting"
 \begin{lstlisting}
 ${0:${VISUAL}}
 \end{lstlisting}
+endsnippet
+
+snippet algo "algorithm"
+\begin{algorithm}
+	\caption{$1}
+	\begin{algorithmic}
+	${0:${VISUAL}}
+	\end{algorithmic}
+\end{algorithm}
+endsnippet
+
+snippet alg "algorithm"
+\begin{algorithmic}
+${0:${VISUAL}}
+\end{algorithmic}
 endsnippet
 
 # snippet enum "Enumerate" bA
@@ -287,8 +319,15 @@ endsnippet
 
 # context "math()"
 # snippet frac "Fraction" iA
+priority 1000
 snippet frac "Fraction" i
-\\frac{$1}{$2}$0
+\\frac{${1:${VISUAL}}}{$2}$0
+endsnippet
+
+# snippet frac "Fraction" iA
+priority 10000
+snippet tfrac "Fraction" i
+\\tfrac{${1:${VISUAL}}}{$2}$0
 endsnippet
 
 snippet / "Convert highlighted to fraction" i
@@ -368,15 +407,15 @@ endsnippet
 # endsnippet
 
 #context "math()"
-snippet ceil "ceil" iA
-#snippet ceil "ceil" i
+#snippet ceil "ceil" iA
+snippet ceil "ceil" i
 \left\lceil $1 \right\rceil $0
 endsnippet
 
 #context "math()"
 #snippet floor "floor" iA
 snippet floor "floor" i
-\left\lfloor $1 \right\rfloor$0
+\left\lfloor $1 \right\rfloor $0
 endsnippet
 
 # snippet pmat "pmat" iA
@@ -420,7 +459,7 @@ endsnippet
 # \left<${1:${VISUAL}} \right>$0
 # endsnippet
 
-context "math()"
+# context "math()"
 snippet conj "conjugate" iA
 \overline{$1}$0
 endsnippet

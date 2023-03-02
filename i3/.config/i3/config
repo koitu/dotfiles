@@ -317,13 +317,14 @@ exec --no-startup-id xbanish
 # faster startup for thunar and auto mounting
 exec --no-startup-id thunar --daemon
 
+# https://n1ghtmare.github.io/2021-05-19/remapping-caps-lock-to-esc-on-arch-linux/
 exec --no-startup-id setxkbmap -option caps:ctrl_modifier
 
 #  #start authentication agent
 #  exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
-bindsym Print exec scrot -z -m -q 100 
-#  bindsym Ctrl+Print exec scrot -z -s -m -f -q 100
+bindsym Print exec scrot -z -m
+bindsym Ctrl+Print exec scrot -z -m -s -f
 
 
 
