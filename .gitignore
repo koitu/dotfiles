@@ -29,3 +29,5 @@
 *.rar
 *.tar
 *.zip
+
+vim/.vim/vim-plug
