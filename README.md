@@ -1,6 +1,6 @@
 # Dotfiles
 
-Configs for my x1 Carbon G6 running Void Linux with 2 Dell U2419HC monitors
+Configs for my x1 extreme gen 1 running archlinux with 2 Dell U2419HC monitors
 
 ## Table of Contents
 - [Installation](#Installation)
