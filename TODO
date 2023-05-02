@@ -1,0 +1,32 @@
+## Todo
+- xkcd mirrorboard
+- custom bash prompt
+- try zsh and fish
+- i3 (config + scratchpad + other stuff)
+- mouse does not warp to centre to empty window
+- wallpaper when vertical
+- make pulse sound good (+ make alsa good too)
+- wallpaper folder (for i3, feh, lightdm, others)
+- vim
+- zathura
+- polybar
+- termite
+- colors (for i3, i3status, polybar, others)
+- custom os logo for lightdm (2bwm dwm) + backup current theme
+- mpd
+- ncmpcpp
+- gtk + qt theme
+- gestures (fusuma)
+- writeup for each program with packages required
+- brightness adjustment
+- screenshot method
+- power managment (tlp/powertop)
+- shutdown/restart/etc
+- screenshots
+- syncthing
+- NetworkManager (backups? + captive portals) (installed nm-connection-editor)
+- custom dns servers + vpn (wireguard) + dns over https or dnscrypt
+- recycle bin?
+- file manager (ranger or something else)
+- lightdm
+

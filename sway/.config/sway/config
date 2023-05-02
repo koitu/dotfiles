@@ -1,21 +1,19 @@
 # assign workspace to monitors
-workspace $ws1 output DP-1.1.1 HDMI-0 DP-1 eDP-1-1 
-workspace $ws2 output DP-1.1.1 HDMI-0 DP-1 eDP-1-1 
-workspace $ws3 output DP-1.1.8 DP-1 DP-0 eDP-1-1
-workspace $ws4 output DP-1.1.8 DP-1 DP-0 eDP-1-1
-workspace $ws5 output eDP-1-1
-workspace $ws6 output eDP-1-1
+#workspace $ws1 output DP-1.1.1 DP-0 HDMI-0 DP-1 eDP-1-1
+#workspace $ws2 output DP-1.1.1 DP-0 HDMI-0 DP-1 eDP-1-1
+#workspace $ws3 output DP-1.1.8 DP-1 eDP-1-1
+#workspace $ws4 output DP-1.1.8 DP-1 eDP-1-1
+#workspace $ws5 output eDP-1-1
+#workspace $ws6 output eDP-1-1
 
 # mod key (Mod1=<Alt> Mod4=<Super>)
 set $mod Mod1
 # set the scripts directory
 set $scripts ~/.config/i3/scripts
 
-
 font pango:Firacode Nerd Font Mono 11
 # font pango:Noto Mono 10
 # font pango:Helvetica Neue, FontAwesome 11
-
 # This font is widely installed, provides lots of unicode glyphs, right-to-left text rendering and scalability on retina/hidpi displays (thanks to pango).
 # font pango:DejaVu Sans Mono 8
 
@@ -44,8 +42,8 @@ bindsym XF86AudioPlay exec --no-startup-id mpc toggle
 ####################
 
 # start a terminal
-bindsym $mod+Return exec termite
-# bindsym $mod+Return exec st
+#bindsym $mod+Return exec termite
+bindsym $mod+Return exec st
 
 # start file manager
 bindsym $mod+Shift+Return exec thunar
@@ -73,6 +71,9 @@ bindsym $mod+Ctrl+Up exec --no-startup-id "$scripts/rotate_monitor.sh normal"
 bindsym $mod+Ctrl+Down exec --no-startup-id "$scripts/rotate_monitor.sh inverted"
 bindsym $mod+Ctrl+Left exec --no-startup-id "$scripts/rotate_monitor.sh left"
 bindsym $mod+Ctrl+Right exec --no-startup-id "$scripts/rotate_monitor.sh right"
+
+bindsym Print exec scrot -z -m -q 100
+#  bindsym Ctrl+Print exec scrot -z -s -m -f -q 100
 
 ###########################
 ### workspaces controls ###
@@ -117,11 +118,11 @@ bindsym $mod+f fullscreen toggle
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-## change container layout (stacked, tabbed, toggle split)
-#bindsym $mod+s layout stacking
-#bindsym $mod+w layout tabbed
-## toggle split toggles split orientation
-#bindsym $mod+e layout toggle split
+# change container layout (stacked, tabbed, toggle split)
+# bindsym $mod+s layout stacking
+# bindsym $mod+w layout tabbed
+# toggle split toggles split orientation
+# bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -132,28 +133,24 @@ bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym $mod+a focus parent
 
-## focus the child container
-#bindsym $mod+d focus child
+# focus the child container
+# bindsym $mod+d focus child
 
 # workspace_layout <default|stacking|tabbed> (default is tiling)
 workspace_layout default
 
 # border style <normal|normal|1pixel|pixel xx|none|pixel>
-# new_window pixel 2
-# new_float pixel 2
-
-# set border size to 2 pixels and disable title bar
+#new_window pixel 2
+#new_float pixel 2
 default_border pixel 2
-default_floating_border pixel 2
-for_window [class=".*"] border pixel 2
 
 # hide_edge_borders <none|vertical|horizontal|both|smart>
 hide_edge_borders smart
 
-## change borders
-#bindsym $mod+u border none
-#bindsym $mod+y border pixel 2
-#bindsym $mod+n border normal
+# change borders
+# bindsym $mod+u border none
+# bindsym $mod+y border pixel 2
+# bindsym $mod+n border normal
 
 ##########################
 ### workspace settings ###
@@ -264,8 +261,7 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status finds out, if available)
 bar {
-    font pango:Firacode Nerd Font Mono 11 
-    status_command i3status
+        status_command i3status
 }
 
 ##########################
@@ -280,42 +276,31 @@ bar {
 # NetworkManager tray GUI
 # exec --no-startup-id nm-applet
 
-# startup geoclue (location provider)
-##exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
+#exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
 
 # start notification handler
-exec --no-startup-id dunst
+#exec --no-startup-id dunst
 
 # start up num lock on
-exec --no-startup-id numlockx on
+#exec --no-startup-id numlockx on
 
 # set wallpaper
-exec --no-startup-id feh --bg-fill ~/.config/i3/fuzzy_wall.jpg
+#exec --no-startup-id feh --bg-fill ~/.config/i3/fuzzy_wall.jpg
 
 # start picom
-exec_always --no-startup-id picom -b
-
-# exec --no-startup-id polybar top
-# exec --no-startup-id i3-msg 'workspace $ws8; exec termite -e ncmpcpp'
+#exec_always --no-startup-id picom -b
 
 # hide mouse when typing
-exec --no-startup-id xbanish
+#exec --no-startup-id xbanish
 
-# faster startup for thunar and auto mounting
-exec --no-startup-id thunar --daemon
+# exec --no-startup-id polybar top
 
-# https://n1ghtmare.github.io/2021-05-19/remapping-caps-lock-to-esc-on-arch-linux/
-exec --no-startup-id setxkbmap -option caps:ctrl_modifier
+# exec --no-startup-id i3-msg 'workspace $ws8; exec termite -e ncmpcpp'
 
-#  #start authentication agent
-#  exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+# start authentication agent
+# exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
-bindsym Print exec scrot -z -m
-bindsym Ctrl+Print exec scrot -z -m -s -f
-# bindsym Print exec scrot -z -m -q 100
-# bindsym Ctrl+Print exec scrot -z -s -m -f -q 100
-
-exec --no-startup-id umonitor --autoload && umonitor --listen --daemonize
+#exec --no-startup-id umonitor --autoload && umonitor --listen --daemonize
 
 # exec --no-startup-id i3-msg 'workspace $ws5; exec discord'
 
@@ -361,7 +346,7 @@ exec --no-startup-id umonitor --autoload && umonitor --listen --daemonize
  # Start i3bar to display a workspace bar (plus the system information i3status if available)
  bar {
  	mode hide
- 	i3bar_command i3bar
+# 	i3bar_command i3bar
  	status_command i3status
  	position bottom
 

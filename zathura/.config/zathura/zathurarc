@@ -21,10 +21,10 @@ set sandbox none
 
 # colors
 set recolor true
-set default-fg "#839496" 
+set default-fg "#839496"
 set default-bg "#09090d"
 
-set recolor-darkcolor "#839496" 
+set recolor-darkcolor "#839496"
 set recolor-lightcolor  "#09090d"
 
 set statusbar-fg "#838486"
