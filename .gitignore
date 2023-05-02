@@ -30,4 +30,5 @@
 *.tar
 *.zip
 
+vim/.vim/autoload/plug.vim
 vim/.vim/vim-plug

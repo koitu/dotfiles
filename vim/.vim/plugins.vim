@@ -26,7 +26,7 @@ Plug 'lervag/vimtex'
 Plug 'KeitaNakamura/tex-conceal.vim'
 
 " snippets
-" Plug 'sirver/ultisnips'
+Plug 'sirver/ultisnips'
 
 call plug#end()
 
