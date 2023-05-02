@@ -44,8 +44,8 @@ bindsym XF86AudioPlay exec --no-startup-id mpc toggle
 ####################
 
 # start a terminal
-#bindsym $mod+Return exec termite
-bindsym $mod+Return exec st
+bindsym $mod+Return exec termite
+# bindsym $mod+Return exec st
 
 # start file manager
 bindsym $mod+Shift+Return exec thunar
@@ -73,9 +73,6 @@ bindsym $mod+Ctrl+Up exec --no-startup-id "$scripts/rotate_monitor.sh normal"
 bindsym $mod+Ctrl+Down exec --no-startup-id "$scripts/rotate_monitor.sh inverted"
 bindsym $mod+Ctrl+Left exec --no-startup-id "$scripts/rotate_monitor.sh left"
 bindsym $mod+Ctrl+Right exec --no-startup-id "$scripts/rotate_monitor.sh right"
-
-bindsym Print exec scrot -z -m -q 100
-#  bindsym Ctrl+Print exec scrot -z -s -m -f -q 100
 
 ###########################
 ### workspaces controls ###
@@ -120,11 +117,11 @@ bindsym $mod+f fullscreen toggle
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# change container layout (stacked, tabbed, toggle split)
-# bindsym $mod+s layout stacking
-# bindsym $mod+w layout tabbed
-# toggle split toggles split orientation
-# bindsym $mod+e layout toggle split
+## change container layout (stacked, tabbed, toggle split)
+#bindsym $mod+s layout stacking
+#bindsym $mod+w layout tabbed
+## toggle split toggles split orientation
+#bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -135,8 +132,8 @@ bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym $mod+a focus parent
 
-# focus the child container
-# bindsym $mod+d focus child
+## focus the child container
+#bindsym $mod+d focus child
 
 # workspace_layout <default|stacking|tabbed> (default is tiling)
 workspace_layout default
@@ -153,10 +150,10 @@ for_window [class=".*"] border pixel 2
 # hide_edge_borders <none|vertical|horizontal|both|smart>
 hide_edge_borders smart
 
-# change borders
-# bindsym $mod+u border none
-# bindsym $mod+y border pixel 2
-# bindsym $mod+n border normal
+## change borders
+#bindsym $mod+u border none
+#bindsym $mod+y border pixel 2
+#bindsym $mod+n border normal
 
 ##########################
 ### workspace settings ###
@@ -283,13 +280,14 @@ bar {
 # NetworkManager tray GUI
 # exec --no-startup-id nm-applet
 
-#exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
+# startup geoclue (location provider)
+##exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
 
 # start notification handler
-#exec --no-startup-id dunst
+exec --no-startup-id dunst
 
 # start up num lock on
-#exec --no-startup-id numlockx on
+exec --no-startup-id numlockx on
 
 # set wallpaper
 exec --no-startup-id feh --bg-fill ~/.config/i3/fuzzy_wall.jpg
@@ -297,10 +295,11 @@ exec --no-startup-id feh --bg-fill ~/.config/i3/fuzzy_wall.jpg
 # start picom
 exec_always --no-startup-id picom -b
 
+# exec --no-startup-id polybar top
+# exec --no-startup-id i3-msg 'workspace $ws8; exec termite -e ncmpcpp'
+
 # hide mouse when typing
 exec --no-startup-id xbanish
-
-# exec --no-startup-id polybar top
 
 # faster startup for thunar and auto mounting
 exec --no-startup-id thunar --daemon
@@ -313,11 +312,8 @@ exec --no-startup-id setxkbmap -option caps:ctrl_modifier
 
 bindsym Print exec scrot -z -m
 bindsym Ctrl+Print exec scrot -z -m -s -f
-
-# exec --no-startup-id i3-msg 'workspace $ws8; exec termite -e ncmpcpp'
-
-# start authentication agent
-# exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+# bindsym Print exec scrot -z -m -q 100
+# bindsym Ctrl+Print exec scrot -z -s -m -f -q 100
 
 exec --no-startup-id umonitor --autoload && umonitor --listen --daemonize
 
