@@ -42,27 +42,32 @@ let g:vimtex_quickfix_mode=0
 " don't want backtick to be an dead key
 " https://ejmastnak.github.io/tutorials/vim-latex/vimtex.html
 let g:vimtex_imaps_enabled=0      " disable insert mode mappings (e.g. if you use UltiSnips)
+" when compiling a multifile project only compile the local file (rather than
+" the main file)
+" let g:vimtex_subfile_start_local=1
 
 " start compiler on start and clean before exit
 augroup vimtex_event_1
   au!
   au User VimtexEventQuit     call vimtex#compiler#clean(0)
-  au User VimtexEventInitPost call vimtex#compiler#compile()
+" uncomment next line to enable continous compiling on entry to file
+" otherwise use \ll to start the continuous compiler
+"  au User VimtexEventInitPost call vimtex#compiler#compile()
 augroup END
 
 let g:vimtex_compiler_latexmk = {
 	\ 'build_dir' : '',
-        \ 'callback' : 1,
-        \ 'continuous' : 1,
-        \ 'executable' : 'latexmk',
-        \ 'hooks' : [],
-        \ 'options' : [
-        \   '-verbose',
-        \   '-file-line-error',
-        \   '-synctex=0',
-        \   '-interaction=nonstopmode',
-        \ ],
-        \}
+    \ 'callback' : 1,
+    \ 'continuous' : 1,
+    \ 'executable' : 'latexmk',
+    \ 'hooks' : [],
+    \ 'options' : [
+    \   '-verbose',
+    \   '-file-line-error',
+    \   '-synctex=0',
+    \   '-interaction=nonstopmode',
+    \ ],
+    \}
 
 " Close viewers when vimtex buffers are closed
 function! CloseViewers()

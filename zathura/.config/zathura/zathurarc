@@ -14,6 +14,8 @@ set selection-clipboard clipboard
 # open pdf links
 set sandbox none
 
+# to click on a link just double click it
+
 # not working
 # set font "Firacode Nerd Font Mono 11"
 

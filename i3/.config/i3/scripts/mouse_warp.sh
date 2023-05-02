@@ -9,5 +9,5 @@ then
 else
 	OUTPUT=$(i3-msg -t get_workspaces | jq -r 'map(select(.focused))[0].output')
 	read width height xoff yoff <<< $(xrandr | grep "$OUTPUT" | sed -r "s/^.*\b([-0-9]+)x([-0-9]+)\+([-0-9]+)\+([-0-9]+).*$/\1 \2 \3 \4/")
-	xdotool mousemove $(($xoff+($width/2))) $(($yoff+($height/2))) 
+	xdotool mousemove $(($xoff+($width/2)+1)) $(($yoff+($height/2))) 
 fi
