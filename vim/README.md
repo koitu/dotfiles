@@ -226,3 +226,6 @@ This means that Ctrl-x is equivelent to Ctrl-X
 :Exp - open vim file explorer
 :Sex - split horizontally and open file explorer on top
 :Vex - split vertically and open file explorer on left
+
+
+in debian highly suggest installing vim-tex for utilsnips support (vim needs to be compiled with python support)

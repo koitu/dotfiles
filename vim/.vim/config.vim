@@ -1,4 +1,4 @@
-runtime: archlinux.vim
+"runtime: archlinux.vim
 " max of 16 colors so rounds to terminal colors
 " set t_Co=16
 " set t_Co=256

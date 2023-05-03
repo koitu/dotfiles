@@ -1,0 +1,13 @@
+/* This fix only works for settings: */
+/* - Menu position: Vivaldi Button */
+/* - Windows Controls Position: Right Side (this puts menu button on the left side...) */
+
+button.vivaldi {
+    scale: unset !important;
+}
+
+#tabs-container:not(.none).top {
+    /* for Windows Control Position: Left Side (menu button on right side) */
+    /* padding-right: 38px; */
+    padding-left: 34px !important;
+}

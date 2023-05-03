@@ -16,3 +16,10 @@
 - dmenu (requires rofi) 
 > Alt+d
 
+
+required packages
+```
+sudo apt install i3 i3status alacritty picom fonts-firacode thunar numlockx feh xbanish scrot
+```
+suggested to also get alacritty and picom configs
+

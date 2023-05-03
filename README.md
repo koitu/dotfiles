@@ -1,6 +1,6 @@
 # Dotfiles
 
-Configs for my x1 extreme gen 1 running archlinux with 2 Dell U2419HC monitors
+Configs for my x1 carbon gen 6 running debian with 2 Dell U2419HC monitors
 
 ## Table of Contents
 - [Installation](#Installation)
