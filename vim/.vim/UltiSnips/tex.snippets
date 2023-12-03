@@ -83,6 +83,18 @@ snippet ob "overbrace" wi
 \overbrace{${1:${VISUAL}}}^{$2}$0
 endsnippet
 
+snippet def "definition" 
+\textbf{Definition}: $0
+endsnippet
+
+snippet thm "Theorem" 
+\textbf{Theorem}: $0
+endsnippet
+
+snippet thmm "Theorem" 
+\textbf{Theorem} (\emph{$1}): $0
+endsnippet
+
 # enable this to allow spell check and ctrl-L to autocorrect
 # setlocal spell
 # set spelllang=nl,en_gb
@@ -252,17 +264,17 @@ snippet item "Itemize"
 endsnippet
 
 snippet sec "section"
-\section{$1}
+\section{${1:${VISUAL}}}
 $0
 endsnippet
 
 snippet ssec "subsection"
-\subsection{$1}
+\subsection{${1:${VISUAL}}}
 $0
 endsnippet
 
 snippet sssec "subsubsection"
-\subsubsection{$1}
+\subsubsection{${1:${VISUAL}}}
 $0
 endsnippet
 
@@ -406,16 +418,29 @@ endsnippet
 # \neq 
 # endsnippet
 
-#context "math()"
-#snippet ceil "ceil" iA
 snippet ceil "ceil" i
-\left\lceil $1 \right\rceil $0
+\lceil ${1:${VISUAL}} \rceil$0
 endsnippet
 
-#context "math()"
-#snippet floor "floor" iA
 snippet floor "floor" i
-\left\lfloor $1 \right\rfloor $0
+\lfloor ${1:${VISUAL}} \rfloor$0
+endsnippet
+
+snippet angle "angle" i
+\langle ${1:${VISUAL}} \rangle$0
+endsnippet
+
+
+snippet lrceil "left right ceil" i
+\left\lceil ${1:${VISUAL}} \right\rceil $0
+endsnippet
+
+snippet lrfloor "left right floor" i
+\left\lfloor ${1:${VISUAL}} \right\rfloor $0
+endsnippet
+
+snippet lrangle "left right angle" i
+\left\langle ${1:${VISUAL}} \right\rangle $0
 endsnippet
 
 # snippet pmat "pmat" iA
@@ -460,9 +485,9 @@ endsnippet
 # endsnippet
 
 # context "math()"
-snippet conj "conjugate" iA
-\overline{$1}$0
-endsnippet
+# snippet conj "conjugate" iA
+# \overline{$1}$0
+# endsnippet
 
 # snippet sum "sum" w
 # \sum_{n=${1:1}}^{${2:\infty}} ${3:a_n z^n}
