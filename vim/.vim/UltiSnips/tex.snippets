@@ -83,6 +83,18 @@ snippet ob "overbrace" wi
 \overbrace{${1:${VISUAL}}}^{$2}$0
 endsnippet
 
+snippet def "definition" w
+\textbf{Definition}: $0
+endsnippet
+
+snippet thm "theorem" w
+\textbf{Theorem}: $0
+endsnippet
+
+snippet thmm "theorem" w
+\textbf{Theorem} (\emph{$1}): $0
+endsnippet
+
 # enable this to allow spell check and ctrl-L to autocorrect
 # setlocal spell
 # set spelllang=nl,en_gb
@@ -409,17 +421,17 @@ endsnippet
 #context "math()"
 #snippet ceil "ceil" iA
 snippet ceil "ceil" i
-\left\lceil $1 \right\rceil $0
+\left\lceil $1 \right\rceil$0
 endsnippet
 
 #context "math()"
 #snippet floor "floor" iA
 snippet floor "floor" i
-\left\lfloor $1 \right\rfloor $0
+\left\lfloor $1 \right\rfloor$0
 endsnippet
 
 snippet angle "angle" i
-\langle $1 \rangle $0
+\langle $1 \rangle$0
 endsnippet
 
 # snippet pmat "pmat" iA
@@ -464,9 +476,9 @@ endsnippet
 # endsnippet
 
 # context "math()"
-snippet conj "conjugate" iA
-\overline{$1}$0
-endsnippet
+# snippet conj "conjugate" iA
+# \overline{$1}$0
+# endsnippet
 
 # snippet sum "sum" w
 # \sum_{n=${1:1}}^{${2:\infty}} ${3:a_n z^n}
