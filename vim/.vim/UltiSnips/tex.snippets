@@ -7,7 +7,7 @@
 snippet preamble "weekly document preamble"
 \documentclass[11pt]{article}
 
-\input{../4A_preamble}
+\input{../4B_preamble}
 
 % set graphics path
 \graphicspath{ {./} }
@@ -83,17 +83,114 @@ snippet ob "overbrace" wi
 \overbrace{${1:${VISUAL}}}^{$2}$0
 endsnippet
 
-snippet def "definition" w
-\textbf{Definition}: $0
+
+
+snippet def "definition"
+\\begin{defn}
+	${1:${VISUAL}}
+\\end{defn}
+$0
 endsnippet
 
-snippet thm "theorem" w
-\textbf{Theorem}: $0
+snippet deff "definition"
+\\begin{defn}[$1]
+	${2:${VISUAL}}
+\\end{defn}
+$0
 endsnippet
 
-snippet thmm "theorem" w
-\textbf{Theorem} (\emph{$1}): $0
+
+snippet thm "theorem"
+\\begin{thm}
+	${1:${VISUAL}}
+\\end{thm}
+$0
 endsnippet
+
+snippet thmm "theorem"
+\\begin{thm}[$1]
+	${2:${VISUAL}}
+\\end{thm}
+$0
+endsnippet
+
+
+snippet lem "lemma"
+\\begin{lem}
+	${1:${VISUAL}}
+\\end{lem}
+$0
+endsnippet
+
+snippet lemm "theorem"
+\\begin{lem}[$1]
+	${2:${VISUAL}}
+\\end{lem}
+$0
+endsnippet
+
+
+snippet cor "corollary"
+\\begin{cor}
+	${1:${VISUAL}}
+\\end{cor}
+$0
+endsnippet
+
+snippet corr "corollary"
+\\begin{cor}[$1]
+	${2:${VISUAL}}
+\\end{cor}
+$0
+endsnippet
+
+
+snippet rmk "remark"
+\\begin{rmk}
+	${1:${VISUAL}}
+\\end{rmk}
+$0
+endsnippet
+
+snippet rmkk "remark"
+\\begin{rmk}[$1]
+	${2:${VISUAL}}
+\\end{rmk}
+$0
+endsnippet
+
+
+snippet ex "example"
+\\begin{ex}
+	${1:${VISUAL}}
+\\end{ex}
+$0
+endsnippet
+
+snippet exx "example"
+\\begin{ex}[$1]
+	${2:${VISUAL}}
+\\end{ex}
+$0
+endsnippet
+
+
+snippet pf "example"
+\\begin{pf}
+	${1:${VISUAL}}
+\\end{pf}
+$0
+endsnippet
+
+snippet pff "example"
+\\begin{pf}[$1]
+	${2:${VISUAL}}
+\\end{pf}
+$0
+endsnippet
+
+
+
 
 # enable this to allow spell check and ctrl-L to autocorrect
 # setlocal spell
@@ -227,7 +324,7 @@ snippet graphic "include graphic"
 endsnippet
 
 snippet lst "lstlisting"
-\begin{lstlisting}
+\begin{lstlisting}[language=$1]
 ${0:${VISUAL}}
 \end{lstlisting}
 endsnippet
@@ -264,17 +361,17 @@ snippet item "Itemize"
 endsnippet
 
 snippet sec "section"
-\section{$1}
+\section{${1:${VISUAL}}}
 $0
 endsnippet
 
 snippet ssec "subsection"
-\subsection{$1}
+\subsection{${1:${VISUAL}}}
 $0
 endsnippet
 
 snippet sssec "subsubsection"
-\subsubsection{$1}
+\subsubsection{${1:${VISUAL}}}
 $0
 endsnippet
 
