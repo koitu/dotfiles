@@ -19,29 +19,29 @@ set sandbox none
 # not working
 # set font "Firacode Nerd Font Mono 11"
 
-# colors
-set recolor true
-set default-fg "#839496"
-set default-bg "#09090d"
-
-set recolor-darkcolor "#839496"
-set recolor-lightcolor  "#09090d"
-
-set statusbar-fg "#838486"
-set statusbar-bg "#09090d"
-
-set inputbar-fg "#839496"
-set inputbar-bg "#09090d"
-
-set completion-highlight-fg "#09090d"
-set completion-highlight-bg "#7086b2"
-
-set highlight-color "#7086b2"
-set highlight-active-color "#58698c"
-
-set notification-fg "#09090d"
-set notification-bg "#7086b2"
-
-# keybinds
-map [normal] ZZ quit
-map [normal] ZQ quit
+# # colors
+# set recolor true
+# set default-fg "#839496"
+# set default-bg "#09090d"
+# 
+# set recolor-darkcolor "#839496"
+# set recolor-lightcolor  "#09090d"
+# 
+# set statusbar-fg "#838486"
+# set statusbar-bg "#09090d"
+# 
+# set inputbar-fg "#839496"
+# set inputbar-bg "#09090d"
+# 
+# set completion-highlight-fg "#09090d"
+# set completion-highlight-bg "#7086b2"
+# 
+# set highlight-color "#7086b2"
+# set highlight-active-color "#58698c"
+# 
+# set notification-fg "#09090d"
+# set notification-bg "#7086b2"
+# 
+# # keybinds
+# map [normal] ZZ quit
+# map [normal] ZQ quit

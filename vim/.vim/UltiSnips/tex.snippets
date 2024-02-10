@@ -84,7 +84,6 @@ snippet ob "overbrace" wi
 endsnippet
 
 
-
 snippet def "definition"
 \\begin{defn}
 	${1:${VISUAL}}
@@ -188,7 +187,6 @@ snippet pff "example"
 \\end{pf}
 $0
 endsnippet
-
 
 
 
@@ -515,20 +513,29 @@ endsnippet
 # \neq 
 # endsnippet
 
-#context "math()"
-#snippet ceil "ceil" iA
 snippet ceil "ceil" i
-\left\lceil $1 \right\rceil$0
+\lceil ${1:${VISUAL}} \rceil$0
 endsnippet
 
-#context "math()"
-#snippet floor "floor" iA
 snippet floor "floor" i
-\left\lfloor $1 \right\rfloor$0
+\lfloor ${1:${VISUAL}} \rfloor$0
 endsnippet
 
 snippet angle "angle" i
-\langle $1 \rangle$0
+\langle ${1:${VISUAL}} \rangle$0
+endsnippet
+
+
+snippet lrceil "left right ceil" i
+\left\lceil ${1:${VISUAL}} \right\rceil $0
+endsnippet
+
+snippet lrfloor "left right floor" i
+\left\lfloor ${1:${VISUAL}} \right\rfloor $0
+endsnippet
+
+snippet lrangle "left right angle" i
+\left\langle ${1:${VISUAL}} \right\rangle $0
 endsnippet
 
 # snippet pmat "pmat" iA
