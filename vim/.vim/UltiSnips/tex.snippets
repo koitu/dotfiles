@@ -41,6 +41,10 @@ snippet bf "textbf" i
 \textbf{${1:${VISUAL}}}$0
 endsnippet
 
+snippet mb "mathbf" i
+\mathbf{${1:${VISUAL}}}$0
+endsnippet
+
 snippet tx "textbf" i
 \text{${1:${VISUAL}}}$0
 endsnippet
@@ -263,8 +267,15 @@ snippet tabu "create a table"
 \\end{tabu}
 endsnippet
 
-snippet minipage "create a minipage"
+snippet minipage "create a minipage aligned centered"
 \\begin{minipage}[c]{$1\\textwidth}
+	${0:${VISUAL}}
+\\end{minipage}
+endsnippet
+
+snippet minipaget "create a minipage aligned at the top"
+\\begin{minipage}[t]{$1\\textwidth}
+	\\vspace{0pt}
 	${0:${VISUAL}}
 \\end{minipage}
 endsnippet
@@ -583,6 +594,10 @@ endsnippet
 # snippet conj "conjugate" iA
 # \overline{$1}$0
 # endsnippet
+
+snippet sum "sum" w
+\sum_{$1}^{$2} $0
+endsnippet
 
 # snippet sum "sum" w
 # \sum_{n=${1:1}}^{${2:\infty}} ${3:a_n z^n}

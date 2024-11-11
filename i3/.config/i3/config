@@ -1,9 +1,9 @@
 # assign workspace to monitors
-workspace $ws1 output DP-1.1.1 HDMI-0 DP-1 eDP-1-1 
-workspace $ws2 output DP-1.1.1 HDMI-0 DP-1 eDP-1-1 
-workspace $ws3 output DP-1.1.8 DP-1 DP-0 eDP-1-1
-workspace $ws4 output DP-1.1.8 DP-1 DP-0 eDP-1-1
-workspace $ws5 output eDP-1-1
+workspace $ws1 output eDP-1 DP-1.1.1 HDMI-0 DP-1 eDP-1-1 
+workspace $ws2 output eDP-1 DP-1.1.1 HDMI-0 DP-1 eDP-1-1 
+workspace $ws3 output eDP-1 DP-1.1.8 DP-1 DP-0 eDP-1-1
+workspace $ws4 output DP-2 DP-1.1.8 DP-1 DP-0 eDP-1-1
+workspace $ws5 output DP-2 eDP-1-1
 workspace $ws6 output eDP-1-1
 
 # mod key (Mod1=<Alt> Mod4=<Super>)
@@ -302,13 +302,16 @@ exec --no-startup-id dunst
 exec --no-startup-id numlockx on
 
 # set wallpaper
-exec --no-startup-id feh --bg-fill ~/.config/i3/fuzzy_wall.jpg
+#exec --no-startup-id feh --bg-fill ~/.config/i3/fuzzy_wall.jpg
+exec --no-startup-id feh --bg-fill /usr/share/wallpapers/fuzzy_wall.jpg
 
 # start picom
 exec_always --no-startup-id picom -b
 
 # exec --no-startup-id polybar top
 # exec --no-startup-id i3-msg 'workspace $ws8; exec termite -e ncmpcpp'
+
+exec --no-startup-id redshift -l 46.46:6.33
 
 # hide mouse when typing
 exec --no-startup-id xbanish
@@ -373,7 +376,7 @@ bindsym Ctrl+Print exec --no-startup-id maim -s -u $(date +%F_%T_%N).png
 #########################
 
  # Start i3bar to display a workspace bar (plus the system information i3status if available)
- bar {
+bar {
  	mode hide
  	i3bar_command i3bar
  	status_command i3status
